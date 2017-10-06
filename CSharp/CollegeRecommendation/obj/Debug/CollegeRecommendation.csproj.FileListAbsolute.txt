@@ -38,3 +38,94 @@ c:\users\jadhav\documents\visual studio 2017\Projects\CollegeRecommendation\Coll
 c:\users\jadhav\documents\visual studio 2017\Projects\CollegeRecommendation\CollegeRecommendation\bin\zh-hans\Microsoft.Bot.Builder.resources.dll
 c:\users\jadhav\documents\visual studio 2017\Projects\CollegeRecommendation\CollegeRecommendation\obj\Debug\Bot Application.dll
 c:\users\jadhav\documents\visual studio 2017\Projects\CollegeRecommendation\CollegeRecommendation\obj\Debug\Bot Application.pdb
+G:\Hackathon\Day 1\CollegeRecommendation\CollegeRecommendation\obj\Debug\CollegeRecommendation.csprojResolveAssemblyReference.cache
+G:\Hackathon\Day 1\CollegeRecommendation\CollegeRecommendation\obj\Debug\CollegeRecommendation.csproj.CoreCompileInputs.cache
+G:\Hackathon\Day 1\CollegeRecommendation\CollegeRecommendation\obj\Debug\Bot Application.dll
+G:\Hackathon\Day 1\CollegeRecommendation\CollegeRecommendation\obj\Debug\Bot Application.pdb
+G:\Hackathon\Day 1\CollegeRecommendation\CollegeRecommendation\bin\Bot Application.dll.config
+G:\Hackathon\Day 1\CollegeRecommendation\CollegeRecommendation\bin\Bot Application.dll
+G:\Hackathon\Day 1\CollegeRecommendation\CollegeRecommendation\bin\Bot Application.pdb
+G:\Hackathon\Day 1\CollegeRecommendation\CollegeRecommendation\bin\AdaptiveCards.dll
+G:\Hackathon\Day 1\CollegeRecommendation\CollegeRecommendation\bin\Autofac.dll
+G:\Hackathon\Day 1\CollegeRecommendation\CollegeRecommendation\bin\Chronic.dll
+G:\Hackathon\Day 1\CollegeRecommendation\CollegeRecommendation\bin\Flurl.dll
+G:\Hackathon\Day 1\CollegeRecommendation\CollegeRecommendation\bin\Flurl.Http.dll
+G:\Hackathon\Day 1\CollegeRecommendation\CollegeRecommendation\bin\Microsoft.Bot.Builder.Autofac.dll
+G:\Hackathon\Day 1\CollegeRecommendation\CollegeRecommendation\bin\Microsoft.Bot.Builder.dll
+G:\Hackathon\Day 1\CollegeRecommendation\CollegeRecommendation\bin\Microsoft.Bot.Connector.dll
+G:\Hackathon\Day 1\CollegeRecommendation\CollegeRecommendation\bin\Microsoft.IdentityModel.Protocol.Extensions.dll
+G:\Hackathon\Day 1\CollegeRecommendation\CollegeRecommendation\bin\Microsoft.Rest.ClientRuntime.dll
+G:\Hackathon\Day 1\CollegeRecommendation\CollegeRecommendation\bin\Microsoft.WindowsAzure.Configuration.dll
+G:\Hackathon\Day 1\CollegeRecommendation\CollegeRecommendation\bin\Newtonsoft.Json.dll
+G:\Hackathon\Day 1\CollegeRecommendation\CollegeRecommendation\bin\System.IdentityModel.Tokens.Jwt.dll
+G:\Hackathon\Day 1\CollegeRecommendation\CollegeRecommendation\bin\System.Net.Http.Formatting.dll
+G:\Hackathon\Day 1\CollegeRecommendation\CollegeRecommendation\bin\System.Web.Http.dll
+G:\Hackathon\Day 1\CollegeRecommendation\CollegeRecommendation\bin\System.Web.Http.WebHost.dll
+G:\Hackathon\Day 1\CollegeRecommendation\CollegeRecommendation\bin\Autofac.xml
+G:\Hackathon\Day 1\CollegeRecommendation\CollegeRecommendation\bin\Flurl.xml
+G:\Hackathon\Day 1\CollegeRecommendation\CollegeRecommendation\bin\Flurl.Http.xml
+G:\Hackathon\Day 1\CollegeRecommendation\CollegeRecommendation\bin\Microsoft.Bot.Builder.xml
+G:\Hackathon\Day 1\CollegeRecommendation\CollegeRecommendation\bin\Microsoft.Bot.Builder.Autofac.xml
+G:\Hackathon\Day 1\CollegeRecommendation\CollegeRecommendation\bin\Microsoft.Bot.Connector.xml
+G:\Hackathon\Day 1\CollegeRecommendation\CollegeRecommendation\bin\Microsoft.IdentityModel.Protocol.Extensions.xml
+G:\Hackathon\Day 1\CollegeRecommendation\CollegeRecommendation\bin\Microsoft.WindowsAzure.Configuration.xml
+G:\Hackathon\Day 1\CollegeRecommendation\CollegeRecommendation\bin\Newtonsoft.Json.xml
+G:\Hackathon\Day 1\CollegeRecommendation\CollegeRecommendation\bin\System.IdentityModel.Tokens.Jwt.xml
+G:\Hackathon\Day 1\CollegeRecommendation\CollegeRecommendation\bin\System.Net.Http.Formatting.xml
+G:\Hackathon\Day 1\CollegeRecommendation\CollegeRecommendation\bin\System.Web.Http.xml
+G:\Hackathon\Day 1\CollegeRecommendation\CollegeRecommendation\bin\System.Web.Http.WebHost.xml
+G:\Hackathon\Day 1\CollegeRecommendation\CollegeRecommendation\bin\ar\Microsoft.Bot.Builder.resources.dll
+G:\Hackathon\Day 1\CollegeRecommendation\CollegeRecommendation\bin\cs\Microsoft.Bot.Builder.resources.dll
+G:\Hackathon\Day 1\CollegeRecommendation\CollegeRecommendation\bin\de-dE\Microsoft.Bot.Builder.resources.dll
+G:\Hackathon\Day 1\CollegeRecommendation\CollegeRecommendation\bin\en\Microsoft.Bot.Builder.resources.dll
+G:\Hackathon\Day 1\CollegeRecommendation\CollegeRecommendation\bin\es\Microsoft.Bot.Builder.resources.dll
+G:\Hackathon\Day 1\CollegeRecommendation\CollegeRecommendation\bin\fa\Microsoft.Bot.Builder.resources.dll
+G:\Hackathon\Day 1\CollegeRecommendation\CollegeRecommendation\bin\fr\Microsoft.Bot.Builder.resources.dll
+G:\Hackathon\Day 1\CollegeRecommendation\CollegeRecommendation\bin\ja\Microsoft.Bot.Builder.resources.dll
+G:\Hackathon\Day 1\CollegeRecommendation\CollegeRecommendation\bin\ru\Microsoft.Bot.Builder.resources.dll
+G:\Hackathon\Day 1\CollegeRecommendation\CollegeRecommendation\bin\zh-hans\Microsoft.Bot.Builder.resources.dll
+G:\Comment\Recommender(1API),FAQ,TextEmo\CollegeRecommendation\CollegeRecommendation\bin\Bot Application.dll.config
+G:\Comment\Recommender(1API),FAQ,TextEmo\CollegeRecommendation\CollegeRecommendation\bin\Bot Application.dll
+G:\Comment\Recommender(1API),FAQ,TextEmo\CollegeRecommendation\CollegeRecommendation\bin\Bot Application.pdb
+G:\Comment\Recommender(1API),FAQ,TextEmo\CollegeRecommendation\CollegeRecommendation\bin\AdaptiveCards.dll
+G:\Comment\Recommender(1API),FAQ,TextEmo\CollegeRecommendation\CollegeRecommendation\bin\Autofac.dll
+G:\Comment\Recommender(1API),FAQ,TextEmo\CollegeRecommendation\CollegeRecommendation\bin\Chronic.dll
+G:\Comment\Recommender(1API),FAQ,TextEmo\CollegeRecommendation\CollegeRecommendation\bin\Flurl.dll
+G:\Comment\Recommender(1API),FAQ,TextEmo\CollegeRecommendation\CollegeRecommendation\bin\Flurl.Http.dll
+G:\Comment\Recommender(1API),FAQ,TextEmo\CollegeRecommendation\CollegeRecommendation\bin\Microsoft.Bot.Builder.Autofac.dll
+G:\Comment\Recommender(1API),FAQ,TextEmo\CollegeRecommendation\CollegeRecommendation\bin\Microsoft.Bot.Builder.dll
+G:\Comment\Recommender(1API),FAQ,TextEmo\CollegeRecommendation\CollegeRecommendation\bin\Microsoft.Bot.Connector.dll
+G:\Comment\Recommender(1API),FAQ,TextEmo\CollegeRecommendation\CollegeRecommendation\bin\Microsoft.IdentityModel.Protocol.Extensions.dll
+G:\Comment\Recommender(1API),FAQ,TextEmo\CollegeRecommendation\CollegeRecommendation\bin\Microsoft.Rest.ClientRuntime.dll
+G:\Comment\Recommender(1API),FAQ,TextEmo\CollegeRecommendation\CollegeRecommendation\bin\Microsoft.WindowsAzure.Configuration.dll
+G:\Comment\Recommender(1API),FAQ,TextEmo\CollegeRecommendation\CollegeRecommendation\bin\Newtonsoft.Json.dll
+G:\Comment\Recommender(1API),FAQ,TextEmo\CollegeRecommendation\CollegeRecommendation\bin\System.IdentityModel.Tokens.Jwt.dll
+G:\Comment\Recommender(1API),FAQ,TextEmo\CollegeRecommendation\CollegeRecommendation\bin\System.Net.Http.Formatting.dll
+G:\Comment\Recommender(1API),FAQ,TextEmo\CollegeRecommendation\CollegeRecommendation\bin\System.Web.Http.dll
+G:\Comment\Recommender(1API),FAQ,TextEmo\CollegeRecommendation\CollegeRecommendation\bin\System.Web.Http.WebHost.dll
+G:\Comment\Recommender(1API),FAQ,TextEmo\CollegeRecommendation\CollegeRecommendation\bin\Autofac.xml
+G:\Comment\Recommender(1API),FAQ,TextEmo\CollegeRecommendation\CollegeRecommendation\bin\Flurl.xml
+G:\Comment\Recommender(1API),FAQ,TextEmo\CollegeRecommendation\CollegeRecommendation\bin\Flurl.Http.xml
+G:\Comment\Recommender(1API),FAQ,TextEmo\CollegeRecommendation\CollegeRecommendation\bin\Microsoft.Bot.Builder.xml
+G:\Comment\Recommender(1API),FAQ,TextEmo\CollegeRecommendation\CollegeRecommendation\bin\Microsoft.Bot.Builder.Autofac.xml
+G:\Comment\Recommender(1API),FAQ,TextEmo\CollegeRecommendation\CollegeRecommendation\bin\Microsoft.Bot.Connector.xml
+G:\Comment\Recommender(1API),FAQ,TextEmo\CollegeRecommendation\CollegeRecommendation\bin\Microsoft.IdentityModel.Protocol.Extensions.xml
+G:\Comment\Recommender(1API),FAQ,TextEmo\CollegeRecommendation\CollegeRecommendation\bin\Microsoft.WindowsAzure.Configuration.xml
+G:\Comment\Recommender(1API),FAQ,TextEmo\CollegeRecommendation\CollegeRecommendation\bin\Newtonsoft.Json.xml
+G:\Comment\Recommender(1API),FAQ,TextEmo\CollegeRecommendation\CollegeRecommendation\bin\System.IdentityModel.Tokens.Jwt.xml
+G:\Comment\Recommender(1API),FAQ,TextEmo\CollegeRecommendation\CollegeRecommendation\bin\System.Net.Http.Formatting.xml
+G:\Comment\Recommender(1API),FAQ,TextEmo\CollegeRecommendation\CollegeRecommendation\bin\System.Web.Http.xml
+G:\Comment\Recommender(1API),FAQ,TextEmo\CollegeRecommendation\CollegeRecommendation\bin\System.Web.Http.WebHost.xml
+G:\Comment\Recommender(1API),FAQ,TextEmo\CollegeRecommendation\CollegeRecommendation\bin\ar\Microsoft.Bot.Builder.resources.dll
+G:\Comment\Recommender(1API),FAQ,TextEmo\CollegeRecommendation\CollegeRecommendation\bin\cs\Microsoft.Bot.Builder.resources.dll
+G:\Comment\Recommender(1API),FAQ,TextEmo\CollegeRecommendation\CollegeRecommendation\bin\de-dE\Microsoft.Bot.Builder.resources.dll
+G:\Comment\Recommender(1API),FAQ,TextEmo\CollegeRecommendation\CollegeRecommendation\bin\en\Microsoft.Bot.Builder.resources.dll
+G:\Comment\Recommender(1API),FAQ,TextEmo\CollegeRecommendation\CollegeRecommendation\bin\es\Microsoft.Bot.Builder.resources.dll
+G:\Comment\Recommender(1API),FAQ,TextEmo\CollegeRecommendation\CollegeRecommendation\bin\fa\Microsoft.Bot.Builder.resources.dll
+G:\Comment\Recommender(1API),FAQ,TextEmo\CollegeRecommendation\CollegeRecommendation\bin\fr\Microsoft.Bot.Builder.resources.dll
+G:\Comment\Recommender(1API),FAQ,TextEmo\CollegeRecommendation\CollegeRecommendation\bin\ja\Microsoft.Bot.Builder.resources.dll
+G:\Comment\Recommender(1API),FAQ,TextEmo\CollegeRecommendation\CollegeRecommendation\bin\ru\Microsoft.Bot.Builder.resources.dll
+G:\Comment\Recommender(1API),FAQ,TextEmo\CollegeRecommendation\CollegeRecommendation\bin\zh-hans\Microsoft.Bot.Builder.resources.dll
+G:\Comment\Recommender(1API),FAQ,TextEmo\CollegeRecommendation\CollegeRecommendation\obj\Debug\CollegeRecommendation.csprojResolveAssemblyReference.cache
+G:\Comment\Recommender(1API),FAQ,TextEmo\CollegeRecommendation\CollegeRecommendation\obj\Debug\Bot Application.dll
+G:\Comment\Recommender(1API),FAQ,TextEmo\CollegeRecommendation\CollegeRecommendation\obj\Debug\Bot Application.pdb

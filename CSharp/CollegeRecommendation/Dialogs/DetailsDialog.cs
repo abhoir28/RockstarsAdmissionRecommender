@@ -22,7 +22,7 @@ namespace CollegeRecommendation.Dialogs
         public Task StartAsync(IDialogContext context)
         {
             context.PostAsync($"Enter Your Name.");
-            //Calls and Waits for MessageReceievedAsync
+
             context.Wait(MessageReceivedAsync);
             return Task.CompletedTask;
         }
@@ -32,8 +32,10 @@ namespace CollegeRecommendation.Dialogs
         {
             var activity = await result as Activity;
             await context.PostAsync($"Please Select Your Gender.");
-            //Calls GenderOptions for Displaying Option
             this.GenderOptions(context);
+
+
+            //context.Call(new Details(), this.ResumeAfter);
         }
         string Category;
         private const string Genral = "Genral Category";
@@ -41,11 +43,9 @@ namespace CollegeRecommendation.Dialogs
         private const string Reserved = "Reserved";
         private void CategoryOptionSelected(IDialogContext context)
         {
-            //For Displaying buttons as Option
             PromptDialog.Choice(context, this.OnCategoryOptionSelected, new List<string>() { Genral, Minoraty, Reserved }, "Select any one", "Not a valid option", 3);
         }
 
-        //Calling the respective fuction on the basis of option selected and storing the value
         private async Task OnCategoryOptionSelected(IDialogContext context, IAwaitable<string> result)
         {
             string optionSelected = await result;
@@ -81,11 +81,9 @@ namespace CollegeRecommendation.Dialogs
         private const string Vj = "VJ";
         private void CategorytwoOptionSelected(IDialogContext context)
         {
-            //For Displaying buttons as Option
             PromptDialog.Choice(context, this.OnMainOptiontwoSelected, new List<string>() { Nt1, Nt2, Nt3, St, Obc, Sc, Vj }, "Select any one", "Not a valid option", 3);
         }
 
-        //Calling the respective fuction on the basis of option selected and storing the value
         private async Task OnMainOptiontwoSelected(IDialogContext context, IAwaitable<string> result)
         {
             string optionSelected = await result;
@@ -195,7 +193,7 @@ namespace CollegeRecommendation.Dialogs
         {
             PromptDialog.Choice(context, this.OnGenderOptionSelected, new List<string>() { Male, Female }, "Select any one", "Not a valid option", 3);
         }
-        //Used to Show the Gender Option
+
         private async Task OnGenderOptionSelected(IDialogContext context, IAwaitable<string> result)
         {
             string optionSelected = await result;
@@ -227,7 +225,6 @@ namespace CollegeRecommendation.Dialogs
         private const string ECE = "ElectronicsEngineering";
         private void MainOptions(IDialogContext context)
         {
-            //Used to display different branches in engineering field out of which user can select any one of them
             PromptDialog.Choice(context, this.OnMainOptionSelected, new List<string>() { IT, Coms, Civil, Mech, Extc, BioTec, BioMed, Chemical, IE, EEE, Auto, ECE }, "Select any one", "Not a valid option", 3);
         }
 
@@ -291,25 +288,24 @@ namespace CollegeRecommendation.Dialogs
             }
 
             await context.PostAsync("Enter MHCET Marks");
-            //Calls and Waits for CallingApiFunction
             context.Wait(CallingApiFunction);
             //context.Done<object>(null);
         }
         string marks;
 
-        
         private async Task CallingApiFunction(IDialogContext context, IAwaitable<object> result)
         {
             var activity = await result as Activity;
             marks = activity.Text;
-            //Calls the API and passes different values as parameter and stores the response in the listColleges
+
             List<college> listColleges = apiCall(sub, Stream, marks, Category);
 
             var reply = context.MakeMessage();
-            //Used to Display the list of colleges in Top most order as per the marks in a HeroCard
+
             reply.AttachmentLayout = AttachmentLayoutTypes.Carousel;
             reply.Attachments = GetApiCardsListAttachments(listColleges);
-            //Displaying the HeroCard in the Bot
+
+            // await context.PostAsync(msg);
             await context.PostAsync(reply);
         }
 
@@ -318,14 +314,55 @@ namespace CollegeRecommendation.Dialogs
             string myCategory = category;
             string mySubCategory = subCategory;
             string myDepartment = department;
-            
+
+            //var subCategoryValue = subCategory;
+
+
+            //if (mySubCategory == "Christain")
+            //    subCategoryValue = "CM";
+
+            //else if (mySubCategory == "Muslim")
+            //    subCategoryValue = "MM";
+
+            //else if (mySubCategory == "Hindu")
+            //    subCategoryValue = "HM";
+
+            //else if (mySubCategory == "Gujarati")
+            //    subCategoryValue = "GM";
+
+            //else if (mySubCategory == "Sindhi")
+            //    subCategoryValue = "SM";
+
+
+            //Dictionary<string, string> departmentValues = new Dictionary<string, string>();
+            //departmentValues.Add("EXTC", "ElectronicsandTelecommunicationEngineering");
+            //departmentValues.Add("IT", "InformationTechnology");
+            //departmentValues.Add("COMPS", "ComputerEngineering");
+            //departmentValues.Add("CIVIL", "CivilEngineering");
+            //departmentValues.Add("MECH", "MechanicalEngineering");
+            //departmentValues.Add("BioTech", "BioTechnology");
+            //departmentValues.Add("BioMedicalEngineering", "BioMedicalEngineering");
+            //departmentValues.Add("CHEMICAL", "ChemicalEngineering");
+            //departmentValues.Add("EEE", "ElectricalEngineering");
+            //departmentValues.Add("IE", "InstrumentationEngineering");
+            //departmentValues.Add("PRODUCTION", "ProductionEngineering");
+            //departmentValues.Add("AUTOMOBILE", "Automobile");
+            //departmentValues.Add("ECE", "ElectronicsEngineering");
 
             string departmentSelected = department;
 
-            //Creating an object of WebClient
-            WebClient webClient = new WebClient();
+            // departmentValues.TryGetValue(mySubCategory, out departmentSelected);
 
-            //Passing the below values to the API
+
+            WebClient webClient = new WebClient();
+            /*webClient.QueryString.Add("marks", marks);
+            // webClient.QueryString.Add("category", myCategory);
+            //  webClient.QueryString.Add("department", myDepartment);
+            webClient.QueryString.Add("category", myCategory);
+            webClient.QueryString.Add("subCategory", subCategoryValue);
+            webClient.QueryString.Add("department", departmentSelected);*/
+
+
             Dictionary<string, string> values = new Dictionary<string, string>();
             values.Add("marks", marks);
             values.Add("category", myCategory);
@@ -338,23 +375,32 @@ namespace CollegeRecommendation.Dialogs
             myvalues.Add("subCategory", mySubCategory);
             myvalues.Add("department", departmentSelected);
 
-            //new instance of class DataContractJsonSerializer used to serialize an object to specified type
             DataContractJsonSerializer serializer = new DataContractJsonSerializer(typeof(Dictionary<string, string>));
             string JsonString = (new JavaScriptSerializer()).Serialize(values);
 
 
             DataContractJsonSerializer myserializer = new DataContractJsonSerializer(typeof(Dictionary<string, string>));
             string myJsonString = (new JavaScriptSerializer()).Serialize(myvalues);
-            
-            //URL for connecting to the API
+
+            //string serializedObject = JsonConvert.SerializeObject(myQueryStringCollection);
+            //string result = webClient.DownloadString("https://g0zmgbj2z2.execute-api.ap-southeast-1.amazonaws.com/prod12");
+            string result = webClient.UploadString("https://g0zmgbj2z2.execute-api.ap-southeast-1.amazonaws.com/prod12", "POST", JsonString);
+            dynamic parsedArray = JsonConvert.DeserializeObject(result);
+
             string result2 = webClient.UploadString("https://jw5zc9iyjh.execute-api.ap-southeast-1.amazonaws.com/dev/", "POST", myJsonString);
-            //Used to Deserialize the object 
+
+
             dynamic parsedArrayTwo = JsonConvert.DeserializeObject(result2);
+
+
+
+
+
+            dynamic parsedArray2 = JsonConvert.DeserializeObject(parsedArray);
 
             college cg;
             List<college> clg = new List<college>();
 
-            //Extracting the required data from the Json 
             foreach (dynamic item in parsedArrayTwo)
             {
                 cg = new college();
@@ -364,20 +410,19 @@ namespace CollegeRecommendation.Dialogs
                 cg.address = item.address;
                 cg.webName = item.webName;
                 clg.Add(cg);
+
             }
 
             return clg;
 
         }
-
-        //Calls the GetHeroListCard internally
-        //Used to put in the list of colleges in HeroCard which will then be displayed in the Bot
         private IList<Attachment> GetApiCardsListAttachments(List<college> listColleges)
         {
             List<Attachment> attachment = new List<Attachment>();
 
             foreach (college c in listColleges)
             {
+
                 var resAttach = GetHeroListCard(
                     c.collegeName,
                     c.address,
@@ -390,7 +435,6 @@ namespace CollegeRecommendation.Dialogs
             return attachment;
         }
 
-        
         private static Attachment GetHeroListCard(string title, string subtitle, string text, CardImage cardImage, CardAction cardAction)
         {
             var heroCard = new HeroCard
