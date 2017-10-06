@@ -1,0 +1,40 @@
+c:\users\jadhav\documents\visual studio 2017\Projects\CollegeRecommendation\CollegeRecommendation\obj\Debug\CollegeRecommendation.csprojResolveAssemblyReference.cache
+c:\users\jadhav\documents\visual studio 2017\Projects\CollegeRecommendation\CollegeRecommendation\bin\Bot Application.dll.config
+c:\users\jadhav\documents\visual studio 2017\Projects\CollegeRecommendation\CollegeRecommendation\bin\Bot Application.dll
+c:\users\jadhav\documents\visual studio 2017\Projects\CollegeRecommendation\CollegeRecommendation\bin\Bot Application.pdb
+c:\users\jadhav\documents\visual studio 2017\Projects\CollegeRecommendation\CollegeRecommendation\bin\Autofac.dll
+c:\users\jadhav\documents\visual studio 2017\Projects\CollegeRecommendation\CollegeRecommendation\bin\Chronic.dll
+c:\users\jadhav\documents\visual studio 2017\Projects\CollegeRecommendation\CollegeRecommendation\bin\Microsoft.Bot.Builder.Autofac.dll
+c:\users\jadhav\documents\visual studio 2017\Projects\CollegeRecommendation\CollegeRecommendation\bin\Microsoft.Bot.Builder.dll
+c:\users\jadhav\documents\visual studio 2017\Projects\CollegeRecommendation\CollegeRecommendation\bin\Microsoft.Bot.Connector.dll
+c:\users\jadhav\documents\visual studio 2017\Projects\CollegeRecommendation\CollegeRecommendation\bin\Microsoft.IdentityModel.Protocol.Extensions.dll
+c:\users\jadhav\documents\visual studio 2017\Projects\CollegeRecommendation\CollegeRecommendation\bin\Microsoft.Rest.ClientRuntime.dll
+c:\users\jadhav\documents\visual studio 2017\Projects\CollegeRecommendation\CollegeRecommendation\bin\Microsoft.WindowsAzure.Configuration.dll
+c:\users\jadhav\documents\visual studio 2017\Projects\CollegeRecommendation\CollegeRecommendation\bin\Newtonsoft.Json.dll
+c:\users\jadhav\documents\visual studio 2017\Projects\CollegeRecommendation\CollegeRecommendation\bin\System.IdentityModel.Tokens.Jwt.dll
+c:\users\jadhav\documents\visual studio 2017\Projects\CollegeRecommendation\CollegeRecommendation\bin\System.Net.Http.Formatting.dll
+c:\users\jadhav\documents\visual studio 2017\Projects\CollegeRecommendation\CollegeRecommendation\bin\System.Web.Http.dll
+c:\users\jadhav\documents\visual studio 2017\Projects\CollegeRecommendation\CollegeRecommendation\bin\System.Web.Http.WebHost.dll
+c:\users\jadhav\documents\visual studio 2017\Projects\CollegeRecommendation\CollegeRecommendation\bin\Autofac.xml
+c:\users\jadhav\documents\visual studio 2017\Projects\CollegeRecommendation\CollegeRecommendation\bin\Microsoft.Bot.Builder.xml
+c:\users\jadhav\documents\visual studio 2017\Projects\CollegeRecommendation\CollegeRecommendation\bin\Microsoft.Bot.Builder.Autofac.xml
+c:\users\jadhav\documents\visual studio 2017\Projects\CollegeRecommendation\CollegeRecommendation\bin\Microsoft.Bot.Connector.xml
+c:\users\jadhav\documents\visual studio 2017\Projects\CollegeRecommendation\CollegeRecommendation\bin\Microsoft.IdentityModel.Protocol.Extensions.xml
+c:\users\jadhav\documents\visual studio 2017\Projects\CollegeRecommendation\CollegeRecommendation\bin\Microsoft.WindowsAzure.Configuration.xml
+c:\users\jadhav\documents\visual studio 2017\Projects\CollegeRecommendation\CollegeRecommendation\bin\Newtonsoft.Json.xml
+c:\users\jadhav\documents\visual studio 2017\Projects\CollegeRecommendation\CollegeRecommendation\bin\System.IdentityModel.Tokens.Jwt.xml
+c:\users\jadhav\documents\visual studio 2017\Projects\CollegeRecommendation\CollegeRecommendation\bin\System.Net.Http.Formatting.xml
+c:\users\jadhav\documents\visual studio 2017\Projects\CollegeRecommendation\CollegeRecommendation\bin\System.Web.Http.xml
+c:\users\jadhav\documents\visual studio 2017\Projects\CollegeRecommendation\CollegeRecommendation\bin\System.Web.Http.WebHost.xml
+c:\users\jadhav\documents\visual studio 2017\Projects\CollegeRecommendation\CollegeRecommendation\bin\ar\Microsoft.Bot.Builder.resources.dll
+c:\users\jadhav\documents\visual studio 2017\Projects\CollegeRecommendation\CollegeRecommendation\bin\cs\Microsoft.Bot.Builder.resources.dll
+c:\users\jadhav\documents\visual studio 2017\Projects\CollegeRecommendation\CollegeRecommendation\bin\de-dE\Microsoft.Bot.Builder.resources.dll
+c:\users\jadhav\documents\visual studio 2017\Projects\CollegeRecommendation\CollegeRecommendation\bin\en\Microsoft.Bot.Builder.resources.dll
+c:\users\jadhav\documents\visual studio 2017\Projects\CollegeRecommendation\CollegeRecommendation\bin\es\Microsoft.Bot.Builder.resources.dll
+c:\users\jadhav\documents\visual studio 2017\Projects\CollegeRecommendation\CollegeRecommendation\bin\fa\Microsoft.Bot.Builder.resources.dll
+c:\users\jadhav\documents\visual studio 2017\Projects\CollegeRecommendation\CollegeRecommendation\bin\fr\Microsoft.Bot.Builder.resources.dll
+c:\users\jadhav\documents\visual studio 2017\Projects\CollegeRecommendation\CollegeRecommendation\bin\ja\Microsoft.Bot.Builder.resources.dll
+c:\users\jadhav\documents\visual studio 2017\Projects\CollegeRecommendation\CollegeRecommendation\bin\ru\Microsoft.Bot.Builder.resources.dll
+c:\users\jadhav\documents\visual studio 2017\Projects\CollegeRecommendation\CollegeRecommendation\bin\zh-hans\Microsoft.Bot.Builder.resources.dll
+c:\users\jadhav\documents\visual studio 2017\Projects\CollegeRecommendation\CollegeRecommendation\obj\Debug\Bot Application.dll
+c:\users\jadhav\documents\visual studio 2017\Projects\CollegeRecommendation\CollegeRecommendation\obj\Debug\Bot Application.pdb
