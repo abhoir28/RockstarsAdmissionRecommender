@@ -71,8 +71,8 @@ namespace CollegeRecommendation
             reply.AttachmentLayout = AttachmentLayoutTypes.Carousel;
             reply.Attachments = GetApiCardsAttachments(listColleges);
             await context.PostAsync(reply);
-
-
+            String resultEmo = GetEmotion(listColleges);
+            await context.PostAsync(resultEmo);
             context.Done<object>(null);
 
         }
@@ -138,6 +138,11 @@ namespace CollegeRecommendation
                         sc.contempt = (string)ScoresJobject["contempt"];
                         sc.disgust = (string)ScoresJobject["disgust"];
                         sc.happiness = (string)ScoresJobject["happiness"];
+                        sc.fear = (string)ScoresJobject["fear"];
+                        sc.neutral = (string)ScoresJobject["neutral"];
+                        sc.sadness = (string)ScoresJobject["sadness"];
+                        sc.surprise = (string)ScoresJobject["surpise"];
+
 
                         lsc.Add(sc);
 
@@ -521,6 +526,70 @@ namespace CollegeRecommendation
                 ContentUrl = $"data:image/png;base64,{imageData}"
             };
 
+        }
+
+        public String GetEmotion(List<Scores> listEmotions)
+        {
+            //List<String> value = new List<String>();
+            String value = null;
+            foreach (Scores c in listEmotions)
+            {
+
+                String resAttach = GetHighestEmo(
+                    c.anger,
+                    c.contempt,
+                    c.disgust,
+                    c.fear,
+                    c.happiness,
+                    c.neutral,
+                    c.sadness,
+                    c.surprise
+                    );
+                //value.Add(resAttach);
+                value = resAttach;
+            }
+            //string ListToStr = string.Join(",", value.ToArray());
+            return value;
+        }
+
+        public String GetHighestEmo(string angry, string contempt, string disgust, string fear, string happy, string neutral, string sad, string surprise)
+        {
+            double a = Convert.ToDouble(angry);
+            double b = Convert.ToDouble(contempt);
+            double c = Convert.ToDouble(disgust);
+            double d = Convert.ToDouble(fear);
+            double e = Convert.ToDouble(happy);
+            double f = Convert.ToDouble(neutral);
+            double g = Convert.ToDouble(sad);
+            double h = Convert.ToDouble(surprise);
+
+            double[] arr = new double[] { a, b, c, d, e, f, g, h };
+            double temp = 0;
+
+            Dictionary<double, string> EmoDictionary = new Dictionary<double, string>();
+
+            EmoDictionary.Add(a, "Angry");
+            EmoDictionary.Add(b, "Contempt");
+            EmoDictionary.Add(c, "Disgust");
+            EmoDictionary.Add(d, "Fear");
+            EmoDictionary.Add(e, "Happy");
+            EmoDictionary.Add(f, "Neutral");
+            EmoDictionary.Add(g, "Sad");
+            EmoDictionary.Add(h, "Surprise");
+
+
+            //if (a > b && a > c && a > d && a > e && a > f && a > g && a > h)
+            for (int i = 0; i <= 7; i++)
+            {
+                if (temp < arr[i])
+                {
+                    temp = arr[i];
+                }
+
+            }
+            return EmoDictionary[temp];
+            //string abc = dictionary[temp];/*dictionary.TryGetValue(temp);*/
+            //return abc;
         }
     }
 }

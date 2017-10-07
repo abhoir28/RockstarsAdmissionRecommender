@@ -1,22 +1,26 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using System.Web;
-using Microsoft.Bot.Builder.Dialogs;
-using Microsoft.Bot.Builder.FormFlow;
-using Microsoft.Bot.Connector;
-using System.Net;
-using Newtonsoft.Json;
-using System.Collections;
-
-namespace CollegeRecommendation
+﻿namespace Testing.Dialogs
 {
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+    using System.Threading.Tasks;
+    using System.Web;
+    using Microsoft.Bot.Builder.Dialogs;
+    using Microsoft.Bot.Builder.FormFlow;
+    using Microsoft.Bot.Connector;
+    using System.Net;
+    using Newtonsoft.Json;
+    using System.Collections;
+
     [Serializable]
-    public class AdmissionProc : IDialog
+    public class AdmissionProcedureDialog : IDialog<object>
     {
+        private int counter;
+
         public async Task StartAsync(IDialogContext context)
         {
+
+
             var message = context.MakeMessage();
             var attachment = admissionimagecard();
             message.Attachments.Add(attachment);
@@ -33,8 +37,8 @@ namespace CollegeRecommendation
             await context.PostAsync(reply);
 
             context.Wait(StepTwoOptionSelected);
-        }
 
+        }
         // Step 2 : 
 
         private static Attachment admissionimagecard()
@@ -43,12 +47,16 @@ namespace CollegeRecommendation
             {
                 Text = "We'll help you go through all the admission process described by MU",
 
-                Images = new List<CardImage> { new CardImage(AppDomain.CurrentDomain.BaseDirectory + "\\Images\\admissions.jpg") },
+                Images = new List<CardImage> { new CardImage("https://s3-ap-southeast-1.amazonaws.com/mvpar/admissions.jpg") },
 
             };
 
             return admission.ToAttachment();
         }
+
+
+
+
 
         private async Task StepTwoOptionSelected(IDialogContext context, IAwaitable<object> result)
         {
@@ -97,39 +105,9 @@ namespace CollegeRecommendation
             context.Wait(StepFiveOptionSelected);
         }
         // Step 5
-        private async Task StepFiveOptionSelected(IDialogContext context, IAwaitable<object> result)
-        {
-            await context.PostAsync("Have You Collected Admission kit from nearest ARC centre?");
 
-            var reply = context.MakeMessage();
-
-            reply.AttachmentLayout = AttachmentLayoutTypes.Carousel;
-
-            reply.Attachments = GetStepFiveHeroCardAttachments();
-
-            await context.PostAsync(reply);
-
-            context.Wait(StepSixOptionSelected);
-        }
 
         // Step 6 
-        private async Task StepSixOptionSelected(IDialogContext context, IAwaitable<object> result)
-        {
-            await context.PostAsync("Have you checked the final merit list !");
-
-            var reply = context.MakeMessage();
-
-            reply.AttachmentLayout = AttachmentLayoutTypes.Carousel;
-
-            reply.Attachments = GetStepSixHeroCardAttachments();
-
-            await context.PostAsync(reply);
-
-            context.Wait(StepSevenOptionSelected);
-
-        }
-
-        //Step 7
 
         private async Task StepSevenOptionSelected(IDialogContext context, IAwaitable<object> result)
         {
@@ -145,6 +123,44 @@ namespace CollegeRecommendation
 
             this.StepEightOptions(context);
         }
+
+
+
+        private async Task StepFiveOptionSelected(IDialogContext context, IAwaitable<object> result)
+        {
+            await context.PostAsync("Have you checked the final merit list !");
+
+            var reply = context.MakeMessage();
+
+            reply.AttachmentLayout = AttachmentLayoutTypes.Carousel;
+
+            reply.Attachments = GetStepFiveHeroCardAttachments();
+
+            await context.PostAsync(reply);
+
+            context.Wait(StepSixOptionSelected);
+        }
+
+        //Step 7
+
+        private async Task StepSixOptionSelected(IDialogContext context, IAwaitable<object> result)
+        {
+            await context.PostAsync("Confirm your option by login into dte");
+
+            var reply = context.MakeMessage();
+
+            reply.AttachmentLayout = AttachmentLayoutTypes.Carousel;
+
+            reply.Attachments = GetStepSixHeroCardAttachments();
+
+            await context.PostAsync(reply);
+
+            context.Wait(StepSevenOptionSelected);
+
+        }
+
+
+
 
         private void StepEightOptions(IDialogContext context)
         {
@@ -168,7 +184,7 @@ namespace CollegeRecommendation
                 Buttons = new List<CardAction>
                 {
                     new CardAction(ActionTypes.OpenUrl, "More Details", value: "https://goo.gl/HxdKr3"),
-                    new CardAction(ActionTypes.ImBack, "Step Two", value: "Step Two")
+                    new CardAction(ActionTypes.ImBack, "Step One", value: "Step One")
 
                 }
             };
@@ -201,7 +217,7 @@ namespace CollegeRecommendation
             {
                   GetStepOneHeroCard(
 
-                    "Arc Center",
+                    "Arc Center  ",
                      cardButtons)
                    // new CardAction(ActionTypes.OpenUrl, "Click Here", value: "https://goo.gl/SDw2EI"))
 
@@ -221,7 +237,7 @@ namespace CollegeRecommendation
                   GetStepTwoHeroCard(
                     new CardImage(url: "https://s3-ap-southeast-1.amazonaws.com/chatbotimages/admission/Step2.jpg"),
                     new CardImage(url: "https://s3-ap-southeast-1.amazonaws.com/chatbotimages/admission/Step2_2.jpg"),
-                    "Login in arc Center",
+                    "Login in DTE",
                     cardButtons)
 
             };
@@ -239,7 +255,7 @@ namespace CollegeRecommendation
             {
                   GetStepThreeHeroCard(
                     new CardImage(url: "https://s3-ap-southeast-1.amazonaws.com/chatbotimages/admission/Step3.png"),
-                    "To Visit the Website ..",
+                    "Fill the application form",
                    cardButtons)
 
             };
@@ -257,7 +273,7 @@ namespace CollegeRecommendation
             {
                   GetStepFourHeroCard(
 
-                    "Go to same arc center from which you have collected the Admission kit",
+                    "verify the documents",
                     cardButtons
                   )
 
@@ -276,7 +292,7 @@ namespace CollegeRecommendation
             {
                   GetStepFiveHeroCard(
 
-                   "To Get address of nearest ARC Center ..",
+                   "View final merit list",
                   cardButtons
 
                   )
@@ -297,7 +313,7 @@ namespace CollegeRecommendation
             {
                   GetStepSixHeroCard(
                     new CardImage(url: "https://s3-ap-southeast-1.amazonaws.com/chatbotimages/admission/Step6.png"),
-                    "Please Login to your DTE account ...",
+                    "Confirm your options",
                     cardButtons
                    )
 
@@ -316,7 +332,7 @@ namespace CollegeRecommendation
             return new List<Attachment>()
             {
                   GetStepSevenHeroCard(
-                   "To Get your status ...",
+                   "Fill the list of colleges",
                   cardButtons
                    )
 
@@ -345,8 +361,8 @@ namespace CollegeRecommendation
             {
                 Title = title,
                 Subtitle = "Admission Reporting Centre (ARC).",
-                Text = "Post Provisional Allotment (via CAP process), a candidate needs to report to any of the below Admission Reporting Centres (ARC) and accept the allocated seat by DTE and select Freeze/Slide/Float option.A Candidate who has been allotted a seat shall download the “Provisional Seat Allotment Letter” and pay the remmittance fees as per the DTE. Seat will be confirmed  by  the Admission Reporting Centre (ARC) after verification of the original documents and ensuring that the Candidate meets all the eligibility norms. The centre  in­charge shall issue the Online Receipt of acceptance to the candidate. ",
-                Images = new List<CardImage> { new CardImage(AppDomain.CurrentDomain.BaseDirectory + "\\images\\application_form.jpg") },
+                Text = "The candidate should visit the nearest arc center to collect the Admission kit \r\r The Admission kit contains the login ID and Password to login into DTE",
+                Images = new List<CardImage> { new CardImage("https://s3-ap-southeast-1.amazonaws.com/mvpar/arc.png") },
                 Buttons = cardAction
             };
 
@@ -359,8 +375,8 @@ namespace CollegeRecommendation
             {
                 Title = title,
                 Subtitle = "Logging in using ID and Password given in kit.",
-                Text = "All  the  MS  candidates  who  have  filled  the  Online  Application  Form  should  report  to any convenient  ARC in person along  with  printout of online  filled  application  form, attested copies  of  the  required documents. The candidate should also carry the required original documents for verification.Post Provisional Allotment (via CAP process), a candidate needs to report to any of the below Admission Reporting Centres (ARC) and accept the allocated seat by DTE and select Freeze/Slide/Float option.A Candidate who has been allotted a seat shall download the “Provisional Seat Allotment Letter” and pay the remmittance fees as per the DTE. Seat will be confirmed  by  the Admission Reporting Centre (ARC) after verification of the original documents and ensuring that the Candidate meets all the eligibility norms. The centre  in­charge shall issue the Online Receipt of acceptance to the candidate. ",
-                Images = new List<CardImage> { new CardImage(AppDomain.CurrentDomain.BaseDirectory + "\\images\\login.gif") },
+                Text = "The Candidate after recieving the Admission kit should Login with the UID and Password in the DTE offical to and fill the apllication form",
+                Images = new List<CardImage> { new CardImage("https://s3-ap-southeast-1.amazonaws.com/mvpar/log.jpg") },
                 Buttons = cardAction
             };
 
@@ -372,9 +388,9 @@ namespace CollegeRecommendation
             var heroCard = new HeroCard
             {
                 Title = title,
-                Subtitle = "Fill the Details Carefully",
-                Text = "The candidate can fill minimum 1 and maximum 300 options. The candidate has to fill the institute choice code against the option number in the online option form.Candidate has to confirm the submitted on - line Option Form himself / herself by re - entering Application ID and Password.The candidate can take the printout of the confirmed Option form for future reference.",
-                Images = new List<CardImage> { new CardImage(AppDomain.CurrentDomain.BaseDirectory + "\\images\\details.jpg") },
+                Subtitle = "Fill the Application Carefully",
+                Text = "The candidate should fill all their details carefully",
+                Images = new List<CardImage> { new CardImage("https://s3-ap-southeast-1.amazonaws.com/mvpar/application_form.jpg") },
                 Buttons = cardAction
             };
 
@@ -386,9 +402,9 @@ namespace CollegeRecommendation
             var heroCard = new HeroCard
             {
                 Title = title,
-                Subtitle = "The ARC officer shall verify the information and required original documents and collect the duly signed application along with attested copies of the required documents.",
-                Text = "The  ARC  officer  shall  confirm  candidate’s  application  through  online  system  and  issue him / her  the Acknowledge - cum - Receipt  letter,which  will  have  the  particulars of the candidate’s profile,important instructions etc.",
-                Images = new List<CardImage> { new CardImage(AppDomain.CurrentDomain.BaseDirectory + "\\images\\verification.jpg") },
+                Subtitle = "Verification of Documents",
+                Text = "The candidate after filling the application form should visit the arc center inorder to verify all their documents required for admission",
+                Images = new List<CardImage> { new CardImage("https://s3-ap-southeast-1.amazonaws.com/mvpar/verification.jpg") },
                 Buttons = cardAction
 
             };
@@ -401,9 +417,9 @@ namespace CollegeRecommendation
             var heroCard = new HeroCard
             {
                 Title = title,
-                Subtitle = "Final merit lists will be displayed on the www.dtemaharashtra.gov.in/fe2014 and at ARCs as per the Schedule.",
-                Text = "Provisional Merit List of eligible Maharashtra candidates, TFWS Candidates, All India candidates and J&K Migrant candidates will be displayed on www.dtemaharashtra.gov.in and at the ARCs as per the schedule.",
-                Images = new List<CardImage> { new CardImage(AppDomain.CurrentDomain.BaseDirectory + "\\images\\merit.jpg") },
+                Subtitle = "Merit list",
+                Text = "The merit list will be displayed after the filling of the form",
+                Images = new List<CardImage> { new CardImage("https://s3-ap-southeast-1.amazonaws.com/mvpar/merit.jpg") },
                 Buttons = cardAction
             };
 
@@ -417,7 +433,7 @@ namespace CollegeRecommendation
                 Title = title,
                 Subtitle = "It is mandatory for all candidates to confirm the online option form by him / her",
                 Text = "Candidates will be able to fill in the online option form through their login on website.It is mandatory for all candidates to confirm the online option form by him / her.The candidate will not be able to change the Options once it is confirmed.",
-                Images = new List<CardImage> { new CardImage(AppDomain.CurrentDomain.BaseDirectory + "\\images\\college.jpg") },
+                Images = new List<CardImage> { new CardImage("https://s3-ap-southeast-1.amazonaws.com/mvpar/college.jpg") },
                 Buttons = cardAction
 
             };
@@ -430,13 +446,14 @@ namespace CollegeRecommendation
             var heroCard = new HeroCard
             {
                 Title = title,
-                Subtitle = "DTE shall display Provisional Allotment of CAP Round I indicating allotted institute and Course.",
-                Text = " If candidate fails to report for the acceptance of allotted seat at Admission Reporting Center in scheduled time. It will be treated as if candidate has rejected the allotted seat. However such candidates will be able to participate in subsequent CAP rounds by filling new Option Form.",
-                Images = new List<CardImage> { new CardImage(AppDomain.CurrentDomain.BaseDirectory + "\\images\\verification.jpg") },
+                Subtitle = "Fill the list of college you want to go",
+                Text = "The candidate can fill minimum 1 and maximum 100 options. The candidate has to fill the institute choice code against the option number in the online option form.Candidate has to confirm the submitted on - line Option Form himself / herself by re - entering Application ID and Password.The candidate can take the printout of the confirmed Option form for future reference.",
+                Images = new List<CardImage> { new CardImage("https://s3-ap-southeast-1.amazonaws.com/mvpar/details.jpg") },
                 Buttons = cardAction
             };
 
             return heroCard.ToAttachment();
         }
+
     }
 }

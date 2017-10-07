@@ -173,7 +173,7 @@ namespace CollegeRecommendation
         {
             var counsellor = new HeroCard
             {
-                Text = "",
+                Text = "Say Hi & Lets Start with Counselling",
 
                 Images = new List<CardImage> { new CardImage("https://s3-ap-southeast-1.amazonaws.com/mvpar/counsellor.png") },
 

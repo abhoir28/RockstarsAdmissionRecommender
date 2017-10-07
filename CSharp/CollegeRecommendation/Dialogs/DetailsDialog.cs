@@ -304,11 +304,21 @@ namespace CollegeRecommendation.Dialogs
 
             reply.AttachmentLayout = AttachmentLayoutTypes.Carousel;
             reply.Attachments = GetApiCardsListAttachments(listColleges);
-
-            // await context.PostAsync(msg);
             await context.PostAsync(reply);
-            await context.PostAsync("Did you get your Desired College");
-            context.Wait(DesiredCollege);
+            
+            context.Call(new FusionQuery(), this.ResumeAferEmotion);
+
+            //await context.PostAsync("Did you get your Desired College");
+           // context.Wait(DesiredCollege);
+        }
+
+        private async Task ResumeAferEmotion(IDialogContext context, IAwaitable<object> result)
+        {
+            FusionQuery fq = new FusionQuery();
+            
+            context.Wait(fq.TextEmo);
+            await context.PostAsync("It seems Like");
+
         }
 
         private static List<college> apiCall(string subCategory, string department, string marks,string category)

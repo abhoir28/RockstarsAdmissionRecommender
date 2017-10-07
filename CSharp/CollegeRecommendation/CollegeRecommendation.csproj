@@ -149,15 +149,16 @@
     <Compile Include="Dialogs\RootDialog.cs" />
     <Compile Include="FaceTestemony.cs" />
     <Compile Include="FrequentlyAskedQuestion.cs" />
+    <Compile Include="FusionQuery.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TextEmotion.cs" />
-    <Compile Include="TextTestemony.cs" />
     <Compile Include="TranslateText.cs" />
     <Compile Include="Watson.cs" />
     <Compile Include="WatsonApiCoun.cs" />
+    <Compile Include="WatsonCounsellerMarathiDialog.cs" />
     <Compile Include="WatsonCounsellorDialog.cs" />
   </ItemGroup>
   <ItemGroup>

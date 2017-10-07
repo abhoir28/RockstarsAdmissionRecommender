@@ -3,6 +3,7 @@ using System.Threading.Tasks;
 using Microsoft.Bot.Builder.Dialogs;
 using Microsoft.Bot.Connector;
 using System.Collections.Generic;
+using Testing.Dialogs;
 
 namespace CollegeRecommendation.Dialogs
 {
@@ -46,12 +47,12 @@ namespace CollegeRecommendation.Dialogs
             {
                 case AdmissionProcedure:
                     //Calls the DetailsDialog and treats it as a function
-                    context.Call(new AdmissionProc(), this.MessageReceivedAsync);
+                    context.Call(new AdmissionProcedureDialog(), this.MessageReceivedAsync);
                     break;
 
                 case Counsellor:
                     //Calls the DetailsDialog and treats it as a function
-                    context.Call(new WatsonCounsellorDialog(), this.MessageReceivedAsync);
+                    this.CounsellerOptions(context);
                     break;
 
                 case CollegeRecommenderOption:
@@ -99,6 +100,30 @@ namespace CollegeRecommendation.Dialogs
                     context.Call(new TranslateText(), this.MessageReceivedAsync);
                     break;
 
+            }
+        }
+        private const string English = "English";
+        private const string Marathi = "Marathi";
+
+        private void CounsellerOptions(IDialogContext context)
+        {
+            PromptDialog.Choice(context, this.OnLanguageOptionSelected1, new List<string>() { English, Marathi }, "Select any one", "Not a valid option", 3);
+        }
+        private async Task OnLanguageOptionSelected1(IDialogContext context, IAwaitable<string> result)
+        {
+            string optionSelected = await result;
+
+            switch (optionSelected)
+            {
+                case English:
+                    //Calls the DetailsDialog and treats it as a function
+                    context.Call(new WatsonCounsellorDialog(), this.MessageReceivedAsync);
+                    break;
+
+                case Marathi:
+                    //Calls the DetailsDialog and treats it as a function
+                    context.Call(new WatsonCounsellorMarathiDialog(), this.MessageReceivedAsync);
+                    break;
             }
         }
 

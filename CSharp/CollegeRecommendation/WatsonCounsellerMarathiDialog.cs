@@ -1,34 +1,48 @@
-﻿using Microsoft.Bot.Builder.Dialogs;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
+﻿using System;
 using System.Threading.Tasks;
+using Microsoft.Bot.Builder.Dialogs;
 using Microsoft.Bot.Connector;
 using System.Net;
+using System.Net.Http;
+using System.Text;
+using System.IO;
+using Newtonsoft.Json;
+using System.Linq;
+using Flurl;
+using Flurl.Http;
+using System.Collections.Generic;
+using CollegeRecommendation.Dialogs;
 
 namespace CollegeRecommendation
 {
     [Serializable]
-    public class TranslateText : IDialog
+    public class WatsonCounsellorMarathiDialog : IDialog<object>
     {
-        public async Task StartAsync(IDialogContext context)
+        public Task StartAsync(IDialogContext context)
         {
-           await context.PostAsync("Enter Something to Translate From English to Marathi");
             context.Wait(MessageReceivedAsync);
+
+            return Task.CompletedTask;
         }
 
         private async Task MessageReceivedAsync(IDialogContext context, IAwaitable<object> result)
+
         {
             var activity = await result as Activity;
-            String input = activity.Text;
+
+            WatsonApiCoun api = new WatsonApiCoun();
+
+            String msg = activity.Text;
+            String res = await api.TalkToWatson(msg);
+            res = res.Replace("\r\n", string.Empty);
+            res = res.Replace(".", string.Empty);
+            String ResultTranslate = res;
             String langpair = "en|mr";
-            String TranslatedResult = TranslateTxt(input, langpair);
+            String TranslatedResult = TranslateText(ResultTranslate, langpair);
             await context.PostAsync(TranslatedResult);
-            context.Wait(MessageReceivedAsync);
         }
 
-        public static string TranslateTxt(string input, string languagePair)
+        public static string TranslateText(string input, string languagePair)
 
         {
             string url = String.Format("http://www.google.com/translate_t?hl=en&ie=UTF8&text={0}&langpair={1}", input, languagePair);
@@ -40,7 +54,5 @@ namespace CollegeRecommendation
             result = result.Substring(0, result.IndexOf("</span>"));
             return result;
         }
-
-
     }
 }

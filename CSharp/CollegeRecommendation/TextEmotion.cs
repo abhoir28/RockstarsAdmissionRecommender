@@ -168,13 +168,11 @@ namespace CollegeRecommendation
             }
 
             var reply = context.MakeMessage();
-
             reply.AttachmentLayout = AttachmentLayoutTypes.Carousel;
             reply.Attachments = GetApiCardsAttachments(lsc);
-
             await context.PostAsync(reply);
-
-
+            String resultTxt = GetTxtEmo(lsc);
+            await context.PostAsync(resultTxt);
             context.Done<object>(null);
         }
 
@@ -412,14 +410,61 @@ namespace CollegeRecommendation
 
             return attachment;
         }
-        internal class ToneAnalyzerTools
-    {
-        public static string JsonPrettify(string json)
+
+        private String GetTxtEmo(List<Score> listTextEmotions)
         {
-            return Newtonsoft.Json.Linq.JObject.Parse(json).ToString();
+            //List<Attachment> attachment = new List<Attachment>();
+            String txtValue = null;
+            foreach (Score c in listTextEmotions)
+            {
+
+                String resAttach = GetEmotionText(
+                    c.sadness,
+                    c.happiness,
+                    c.anger,
+                    c.disgust,
+                    c.fear
+                    );
+
+                txtValue = resAttach;
+            }
+            return txtValue;
         }
 
-    }
+        public String GetEmotionText(string sadness, string happiness, string anger, string disgust, string fear)
+        {
+            double s = Convert.ToDouble(sadness);
+            double h = Convert.ToDouble(happiness);
+            double a = Convert.ToDouble(anger);
+            double d = Convert.ToDouble(disgust);
+            double f = Convert.ToDouble(fear);
+
+            double[] arr = new double[] { s, h, a, d, f };
+            double tempo = 0;
+
+            Dictionary<double, string> TextDictionary = new Dictionary<double, string>();
+
+            TextDictionary.Add(s, "Sadness");
+            TextDictionary.Add(h, "Happiness");
+            TextDictionary.Add(a, "Anger");
+            TextDictionary.Add(d, "Disgust");
+            TextDictionary.Add(f, "Fear");
+
+
+            //if (a > b && a > c && a > d && a > e && a > f && a > g && a > h)
+            for (int i = 0; i <= 4; i++)
+            {
+                if (tempo < arr[i])
+                {
+                    tempo = arr[i];
+                }
+
+            }
+            return TextDictionary[tempo];
+            //string abc = dictionary[temp];/*dictionary.TryGetValue(temp);*/
+            //return abc;
+        }
+    
     }
 }
 

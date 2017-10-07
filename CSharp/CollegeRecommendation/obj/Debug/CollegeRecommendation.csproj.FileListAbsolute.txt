@@ -225,3 +225,73 @@ G:\Hackathon\Day 2\CollegeRecommendation\CollegeRecommendation\obj\Debug\College
 G:\Hackathon\Day 2\CollegeRecommendation\CollegeRecommendation\obj\Debug\CollegeRecommendation.csproj.CoreCompileInputs.cache
 G:\Hackathon\Day 2\CollegeRecommendation\CollegeRecommendation\obj\Debug\Bot Application.dll
 G:\Hackathon\Day 2\CollegeRecommendation\CollegeRecommendation\obj\Debug\Bot Application.pdb
+F:\KJHack\Code with Fusion\CollegeRecommendation\CollegeRecommendation\obj\Debug\CollegeRecommendation.csprojResolveAssemblyReference.cache
+F:\KJHack\Code with Fusion\CollegeRecommendation\CollegeRecommendation\obj\Debug\Bot Application.dll
+F:\KJHack\Code with Fusion\CollegeRecommendation\CollegeRecommendation\obj\Debug\Bot Application.pdb
+F:\KJHack\Code with Fusion\CollegeRecommendation\CollegeRecommendation\bin\Bot Application.dll.config
+F:\KJHack\Code with Fusion\CollegeRecommendation\CollegeRecommendation\bin\Bot Application.dll
+F:\KJHack\Code with Fusion\CollegeRecommendation\CollegeRecommendation\bin\Bot Application.pdb
+F:\KJHack\Code with Fusion\CollegeRecommendation\CollegeRecommendation\bin\AdaptiveCards.dll
+F:\KJHack\Code with Fusion\CollegeRecommendation\CollegeRecommendation\bin\Autofac.dll
+F:\KJHack\Code with Fusion\CollegeRecommendation\CollegeRecommendation\bin\Chronic.dll
+F:\KJHack\Code with Fusion\CollegeRecommendation\CollegeRecommendation\bin\Emgu.CV.UI.dll
+F:\KJHack\Code with Fusion\CollegeRecommendation\CollegeRecommendation\bin\Emgu.CV.UI.GL.dll
+F:\KJHack\Code with Fusion\CollegeRecommendation\CollegeRecommendation\bin\Emgu.CV.World.dll
+F:\KJHack\Code with Fusion\CollegeRecommendation\CollegeRecommendation\bin\Flurl.dll
+F:\KJHack\Code with Fusion\CollegeRecommendation\CollegeRecommendation\bin\Flurl.Http.dll
+F:\KJHack\Code with Fusion\CollegeRecommendation\CollegeRecommendation\bin\Microsoft.Bot.Builder.Autofac.dll
+F:\KJHack\Code with Fusion\CollegeRecommendation\CollegeRecommendation\bin\Microsoft.Bot.Builder.dll
+F:\KJHack\Code with Fusion\CollegeRecommendation\CollegeRecommendation\bin\Microsoft.Bot.Connector.dll
+F:\KJHack\Code with Fusion\CollegeRecommendation\CollegeRecommendation\bin\Microsoft.IdentityModel.Protocol.Extensions.dll
+F:\KJHack\Code with Fusion\CollegeRecommendation\CollegeRecommendation\bin\Microsoft.Rest.ClientRuntime.dll
+F:\KJHack\Code with Fusion\CollegeRecommendation\CollegeRecommendation\bin\Microsoft.WindowsAzure.Configuration.dll
+F:\KJHack\Code with Fusion\CollegeRecommendation\CollegeRecommendation\bin\Newtonsoft.Json.dll
+F:\KJHack\Code with Fusion\CollegeRecommendation\CollegeRecommendation\bin\OpenTK.dll
+F:\KJHack\Code with Fusion\CollegeRecommendation\CollegeRecommendation\bin\OpenTK.GLControl.dll
+F:\KJHack\Code with Fusion\CollegeRecommendation\CollegeRecommendation\bin\System.IdentityModel.Tokens.Jwt.dll
+F:\KJHack\Code with Fusion\CollegeRecommendation\CollegeRecommendation\bin\System.Net.Http.Formatting.dll
+F:\KJHack\Code with Fusion\CollegeRecommendation\CollegeRecommendation\bin\System.Web.Http.dll
+F:\KJHack\Code with Fusion\CollegeRecommendation\CollegeRecommendation\bin\System.Web.Http.WebHost.dll
+F:\KJHack\Code with Fusion\CollegeRecommendation\CollegeRecommendation\bin\ZedGraph.dll
+F:\KJHack\Code with Fusion\CollegeRecommendation\CollegeRecommendation\bin\Autofac.xml
+F:\KJHack\Code with Fusion\CollegeRecommendation\CollegeRecommendation\bin\Emgu.CV.UI.xml
+F:\KJHack\Code with Fusion\CollegeRecommendation\CollegeRecommendation\bin\Emgu.CV.UI.GL.xml
+F:\KJHack\Code with Fusion\CollegeRecommendation\CollegeRecommendation\bin\Emgu.CV.World.xml
+F:\KJHack\Code with Fusion\CollegeRecommendation\CollegeRecommendation\bin\Flurl.xml
+F:\KJHack\Code with Fusion\CollegeRecommendation\CollegeRecommendation\bin\Flurl.Http.xml
+F:\KJHack\Code with Fusion\CollegeRecommendation\CollegeRecommendation\bin\Microsoft.Bot.Builder.xml
+F:\KJHack\Code with Fusion\CollegeRecommendation\CollegeRecommendation\bin\Microsoft.Bot.Builder.Autofac.xml
+F:\KJHack\Code with Fusion\CollegeRecommendation\CollegeRecommendation\bin\Microsoft.Bot.Connector.xml
+F:\KJHack\Code with Fusion\CollegeRecommendation\CollegeRecommendation\bin\Microsoft.IdentityModel.Protocol.Extensions.xml
+F:\KJHack\Code with Fusion\CollegeRecommendation\CollegeRecommendation\bin\Microsoft.WindowsAzure.Configuration.xml
+F:\KJHack\Code with Fusion\CollegeRecommendation\CollegeRecommendation\bin\Newtonsoft.Json.xml
+F:\KJHack\Code with Fusion\CollegeRecommendation\CollegeRecommendation\bin\OpenTK.xml
+F:\KJHack\Code with Fusion\CollegeRecommendation\CollegeRecommendation\bin\OpenTK.GLControl.xml
+F:\KJHack\Code with Fusion\CollegeRecommendation\CollegeRecommendation\bin\System.IdentityModel.Tokens.Jwt.xml
+F:\KJHack\Code with Fusion\CollegeRecommendation\CollegeRecommendation\bin\System.Net.Http.Formatting.xml
+F:\KJHack\Code with Fusion\CollegeRecommendation\CollegeRecommendation\bin\System.Web.Http.xml
+F:\KJHack\Code with Fusion\CollegeRecommendation\CollegeRecommendation\bin\System.Web.Http.WebHost.xml
+F:\KJHack\Code with Fusion\CollegeRecommendation\CollegeRecommendation\bin\ZedGraph.xml
+F:\KJHack\Code with Fusion\CollegeRecommendation\CollegeRecommendation\bin\ar\Microsoft.Bot.Builder.resources.dll
+F:\KJHack\Code with Fusion\CollegeRecommendation\CollegeRecommendation\bin\cs\Microsoft.Bot.Builder.resources.dll
+F:\KJHack\Code with Fusion\CollegeRecommendation\CollegeRecommendation\bin\de-dE\Microsoft.Bot.Builder.resources.dll
+F:\KJHack\Code with Fusion\CollegeRecommendation\CollegeRecommendation\bin\en\Microsoft.Bot.Builder.resources.dll
+F:\KJHack\Code with Fusion\CollegeRecommendation\CollegeRecommendation\bin\es\Microsoft.Bot.Builder.resources.dll
+F:\KJHack\Code with Fusion\CollegeRecommendation\CollegeRecommendation\bin\fa\Microsoft.Bot.Builder.resources.dll
+F:\KJHack\Code with Fusion\CollegeRecommendation\CollegeRecommendation\bin\fr\Microsoft.Bot.Builder.resources.dll
+F:\KJHack\Code with Fusion\CollegeRecommendation\CollegeRecommendation\bin\ja\Microsoft.Bot.Builder.resources.dll
+F:\KJHack\Code with Fusion\CollegeRecommendation\CollegeRecommendation\bin\ru\Microsoft.Bot.Builder.resources.dll
+F:\KJHack\Code with Fusion\CollegeRecommendation\CollegeRecommendation\bin\zh-hans\Microsoft.Bot.Builder.resources.dll
+F:\KJHack\Code with Fusion\CollegeRecommendation\CollegeRecommendation\bin\de\ZedGraph.resources.dll
+F:\KJHack\Code with Fusion\CollegeRecommendation\CollegeRecommendation\bin\es\ZedGraph.resources.dll
+F:\KJHack\Code with Fusion\CollegeRecommendation\CollegeRecommendation\bin\fr\ZedGraph.resources.dll
+F:\KJHack\Code with Fusion\CollegeRecommendation\CollegeRecommendation\bin\hu\ZedGraph.resources.dll
+F:\KJHack\Code with Fusion\CollegeRecommendation\CollegeRecommendation\bin\it\ZedGraph.resources.dll
+F:\KJHack\Code with Fusion\CollegeRecommendation\CollegeRecommendation\bin\ja\ZedGraph.resources.dll
+F:\KJHack\Code with Fusion\CollegeRecommendation\CollegeRecommendation\bin\pt\ZedGraph.resources.dll
+F:\KJHack\Code with Fusion\CollegeRecommendation\CollegeRecommendation\bin\ru\ZedGraph.resources.dll
+F:\KJHack\Code with Fusion\CollegeRecommendation\CollegeRecommendation\bin\sk\ZedGraph.resources.dll
+F:\KJHack\Code with Fusion\CollegeRecommendation\CollegeRecommendation\bin\sv\ZedGraph.resources.dll
+F:\KJHack\Code with Fusion\CollegeRecommendation\CollegeRecommendation\bin\tr\ZedGraph.resources.dll
+F:\KJHack\Code with Fusion\CollegeRecommendation\CollegeRecommendation\bin\zh-cn\ZedGraph.resources.dll
+F:\KJHack\Code with Fusion\CollegeRecommendation\CollegeRecommendation\bin\zh-tw\ZedGraph.resources.dll
