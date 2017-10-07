@@ -140,6 +140,7 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AdmissionProc.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="CameraCapture.cs" />
     <Compile Include="college.cs" />
@@ -156,6 +157,8 @@
     <Compile Include="TextTestemony.cs" />
     <Compile Include="TranslateText.cs" />
     <Compile Include="Watson.cs" />
+    <Compile Include="WatsonApiCoun.cs" />
+    <Compile Include="WatsonCounsellorDialog.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config">
