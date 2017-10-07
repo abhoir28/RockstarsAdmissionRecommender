@@ -154,6 +154,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TextEmotion.cs" />
     <Compile Include="TextTestemony.cs" />
+    <Compile Include="TranslateText.cs" />
     <Compile Include="Watson.cs" />
   </ItemGroup>
   <ItemGroup>

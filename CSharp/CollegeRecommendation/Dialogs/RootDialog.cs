@@ -52,12 +52,13 @@ namespace CollegeRecommendation.Dialogs
             }
         }
 
-        private const string FaceEmotionOption = "Face";
-        private const string TextEmotionOption = "Text";
+        private const string FaceEmotionOption = "Face Emotion";
+        private const string TextEmotionOption = "Text Emotion";
+        private const string TranslateOption = "Translation";
         
         private void TestemonyOption(IDialogContext context)
         {
-            PromptDialog.Choice(context, this.TestemonyOptions, new List<string>() { FaceEmotionOption, TextEmotionOption }, "Select any one", "Not a valid option", 3);
+            PromptDialog.Choice(context, this.TestemonyOptions, new List<string>() { FaceEmotionOption, TextEmotionOption, TranslateOption }, "Select any one", "Not a valid option", 3);
         }
         private async Task TestemonyOptions(IDialogContext context, IAwaitable<string> result)
         {
@@ -74,6 +75,12 @@ namespace CollegeRecommendation.Dialogs
                     //Calls the FrequentlyAskedQuestion and treats it as a function
                     context.Call(new TextEmotion(), this.MessageReceivedAsync);
                     break;
+
+                case TranslateOption:
+                    //Calls the FrequentlyAskedQuestion and treats it as a function
+                    context.Call(new TranslateText(), this.MessageReceivedAsync);
+                    break;
+
             }
         }
     }

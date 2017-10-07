@@ -154,3 +154,74 @@ F:\VisualStudioProjects\CollegeRecommendation\CollegeRecommendation\bin\zh-tw\Ze
 F:\VisualStudioProjects\CollegeRecommendation\CollegeRecommendation\obj\Debug\CollegeRecommendation.csprojResolveAssemblyReference.cache
 F:\VisualStudioProjects\CollegeRecommendation\CollegeRecommendation\obj\Debug\Bot Application.dll
 F:\VisualStudioProjects\CollegeRecommendation\CollegeRecommendation\obj\Debug\Bot Application.pdb
+G:\Hackathon\Day 2\CollegeRecommendation\CollegeRecommendation\bin\Bot Application.dll.config
+G:\Hackathon\Day 2\CollegeRecommendation\CollegeRecommendation\bin\Bot Application.dll
+G:\Hackathon\Day 2\CollegeRecommendation\CollegeRecommendation\bin\Bot Application.pdb
+G:\Hackathon\Day 2\CollegeRecommendation\CollegeRecommendation\bin\AdaptiveCards.dll
+G:\Hackathon\Day 2\CollegeRecommendation\CollegeRecommendation\bin\Autofac.dll
+G:\Hackathon\Day 2\CollegeRecommendation\CollegeRecommendation\bin\Chronic.dll
+G:\Hackathon\Day 2\CollegeRecommendation\CollegeRecommendation\bin\Emgu.CV.UI.dll
+G:\Hackathon\Day 2\CollegeRecommendation\CollegeRecommendation\bin\Emgu.CV.UI.GL.dll
+G:\Hackathon\Day 2\CollegeRecommendation\CollegeRecommendation\bin\Emgu.CV.World.dll
+G:\Hackathon\Day 2\CollegeRecommendation\CollegeRecommendation\bin\Flurl.dll
+G:\Hackathon\Day 2\CollegeRecommendation\CollegeRecommendation\bin\Flurl.Http.dll
+G:\Hackathon\Day 2\CollegeRecommendation\CollegeRecommendation\bin\Microsoft.Bot.Builder.Autofac.dll
+G:\Hackathon\Day 2\CollegeRecommendation\CollegeRecommendation\bin\Microsoft.Bot.Builder.dll
+G:\Hackathon\Day 2\CollegeRecommendation\CollegeRecommendation\bin\Microsoft.Bot.Connector.dll
+G:\Hackathon\Day 2\CollegeRecommendation\CollegeRecommendation\bin\Microsoft.IdentityModel.Protocol.Extensions.dll
+G:\Hackathon\Day 2\CollegeRecommendation\CollegeRecommendation\bin\Microsoft.Rest.ClientRuntime.dll
+G:\Hackathon\Day 2\CollegeRecommendation\CollegeRecommendation\bin\Microsoft.WindowsAzure.Configuration.dll
+G:\Hackathon\Day 2\CollegeRecommendation\CollegeRecommendation\bin\Newtonsoft.Json.dll
+G:\Hackathon\Day 2\CollegeRecommendation\CollegeRecommendation\bin\OpenTK.dll
+G:\Hackathon\Day 2\CollegeRecommendation\CollegeRecommendation\bin\OpenTK.GLControl.dll
+G:\Hackathon\Day 2\CollegeRecommendation\CollegeRecommendation\bin\System.IdentityModel.Tokens.Jwt.dll
+G:\Hackathon\Day 2\CollegeRecommendation\CollegeRecommendation\bin\System.Net.Http.Formatting.dll
+G:\Hackathon\Day 2\CollegeRecommendation\CollegeRecommendation\bin\System.Web.Http.dll
+G:\Hackathon\Day 2\CollegeRecommendation\CollegeRecommendation\bin\System.Web.Http.WebHost.dll
+G:\Hackathon\Day 2\CollegeRecommendation\CollegeRecommendation\bin\ZedGraph.dll
+G:\Hackathon\Day 2\CollegeRecommendation\CollegeRecommendation\bin\Autofac.xml
+G:\Hackathon\Day 2\CollegeRecommendation\CollegeRecommendation\bin\Emgu.CV.UI.xml
+G:\Hackathon\Day 2\CollegeRecommendation\CollegeRecommendation\bin\Emgu.CV.UI.GL.xml
+G:\Hackathon\Day 2\CollegeRecommendation\CollegeRecommendation\bin\Emgu.CV.World.xml
+G:\Hackathon\Day 2\CollegeRecommendation\CollegeRecommendation\bin\Flurl.xml
+G:\Hackathon\Day 2\CollegeRecommendation\CollegeRecommendation\bin\Flurl.Http.xml
+G:\Hackathon\Day 2\CollegeRecommendation\CollegeRecommendation\bin\Microsoft.Bot.Builder.xml
+G:\Hackathon\Day 2\CollegeRecommendation\CollegeRecommendation\bin\Microsoft.Bot.Builder.Autofac.xml
+G:\Hackathon\Day 2\CollegeRecommendation\CollegeRecommendation\bin\Microsoft.Bot.Connector.xml
+G:\Hackathon\Day 2\CollegeRecommendation\CollegeRecommendation\bin\Microsoft.IdentityModel.Protocol.Extensions.xml
+G:\Hackathon\Day 2\CollegeRecommendation\CollegeRecommendation\bin\Microsoft.WindowsAzure.Configuration.xml
+G:\Hackathon\Day 2\CollegeRecommendation\CollegeRecommendation\bin\Newtonsoft.Json.xml
+G:\Hackathon\Day 2\CollegeRecommendation\CollegeRecommendation\bin\OpenTK.xml
+G:\Hackathon\Day 2\CollegeRecommendation\CollegeRecommendation\bin\OpenTK.GLControl.xml
+G:\Hackathon\Day 2\CollegeRecommendation\CollegeRecommendation\bin\System.IdentityModel.Tokens.Jwt.xml
+G:\Hackathon\Day 2\CollegeRecommendation\CollegeRecommendation\bin\System.Net.Http.Formatting.xml
+G:\Hackathon\Day 2\CollegeRecommendation\CollegeRecommendation\bin\System.Web.Http.xml
+G:\Hackathon\Day 2\CollegeRecommendation\CollegeRecommendation\bin\System.Web.Http.WebHost.xml
+G:\Hackathon\Day 2\CollegeRecommendation\CollegeRecommendation\bin\ZedGraph.xml
+G:\Hackathon\Day 2\CollegeRecommendation\CollegeRecommendation\bin\ar\Microsoft.Bot.Builder.resources.dll
+G:\Hackathon\Day 2\CollegeRecommendation\CollegeRecommendation\bin\cs\Microsoft.Bot.Builder.resources.dll
+G:\Hackathon\Day 2\CollegeRecommendation\CollegeRecommendation\bin\de-dE\Microsoft.Bot.Builder.resources.dll
+G:\Hackathon\Day 2\CollegeRecommendation\CollegeRecommendation\bin\en\Microsoft.Bot.Builder.resources.dll
+G:\Hackathon\Day 2\CollegeRecommendation\CollegeRecommendation\bin\es\Microsoft.Bot.Builder.resources.dll
+G:\Hackathon\Day 2\CollegeRecommendation\CollegeRecommendation\bin\fa\Microsoft.Bot.Builder.resources.dll
+G:\Hackathon\Day 2\CollegeRecommendation\CollegeRecommendation\bin\fr\Microsoft.Bot.Builder.resources.dll
+G:\Hackathon\Day 2\CollegeRecommendation\CollegeRecommendation\bin\ja\Microsoft.Bot.Builder.resources.dll
+G:\Hackathon\Day 2\CollegeRecommendation\CollegeRecommendation\bin\ru\Microsoft.Bot.Builder.resources.dll
+G:\Hackathon\Day 2\CollegeRecommendation\CollegeRecommendation\bin\zh-hans\Microsoft.Bot.Builder.resources.dll
+G:\Hackathon\Day 2\CollegeRecommendation\CollegeRecommendation\bin\de\ZedGraph.resources.dll
+G:\Hackathon\Day 2\CollegeRecommendation\CollegeRecommendation\bin\es\ZedGraph.resources.dll
+G:\Hackathon\Day 2\CollegeRecommendation\CollegeRecommendation\bin\fr\ZedGraph.resources.dll
+G:\Hackathon\Day 2\CollegeRecommendation\CollegeRecommendation\bin\hu\ZedGraph.resources.dll
+G:\Hackathon\Day 2\CollegeRecommendation\CollegeRecommendation\bin\it\ZedGraph.resources.dll
+G:\Hackathon\Day 2\CollegeRecommendation\CollegeRecommendation\bin\ja\ZedGraph.resources.dll
+G:\Hackathon\Day 2\CollegeRecommendation\CollegeRecommendation\bin\pt\ZedGraph.resources.dll
+G:\Hackathon\Day 2\CollegeRecommendation\CollegeRecommendation\bin\ru\ZedGraph.resources.dll
+G:\Hackathon\Day 2\CollegeRecommendation\CollegeRecommendation\bin\sk\ZedGraph.resources.dll
+G:\Hackathon\Day 2\CollegeRecommendation\CollegeRecommendation\bin\sv\ZedGraph.resources.dll
+G:\Hackathon\Day 2\CollegeRecommendation\CollegeRecommendation\bin\tr\ZedGraph.resources.dll
+G:\Hackathon\Day 2\CollegeRecommendation\CollegeRecommendation\bin\zh-cn\ZedGraph.resources.dll
+G:\Hackathon\Day 2\CollegeRecommendation\CollegeRecommendation\bin\zh-tw\ZedGraph.resources.dll
+G:\Hackathon\Day 2\CollegeRecommendation\CollegeRecommendation\obj\Debug\CollegeRecommendation.csprojResolveAssemblyReference.cache
+G:\Hackathon\Day 2\CollegeRecommendation\CollegeRecommendation\obj\Debug\CollegeRecommendation.csproj.CoreCompileInputs.cache
+G:\Hackathon\Day 2\CollegeRecommendation\CollegeRecommendation\obj\Debug\Bot Application.dll
+G:\Hackathon\Day 2\CollegeRecommendation\CollegeRecommendation\obj\Debug\Bot Application.pdb
