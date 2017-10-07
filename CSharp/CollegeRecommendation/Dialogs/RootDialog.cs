@@ -47,11 +47,34 @@ namespace CollegeRecommendation.Dialogs
                     break;
 
                 case Test:
-                    //Calls the TextEmotion and treats it as a function
-                    context.Call(new TextEmotion(), this.MessageReceivedAsync);
+                    this.TestemonyOption(context);
                     break;
             }
         }
 
+        private const string FaceEmotionOption = "Face";
+        private const string TextEmotionOption = "Text";
+        
+        private void TestemonyOption(IDialogContext context)
+        {
+            PromptDialog.Choice(context, this.TestemonyOptions, new List<string>() { FaceEmotionOption, TextEmotionOption }, "Select any one", "Not a valid option", 3);
+        }
+        private async Task TestemonyOptions(IDialogContext context, IAwaitable<string> result)
+        {
+            string optionSelected = await result;
+
+            switch (optionSelected)
+            {
+                case FaceEmotionOption:
+                    //Calls the DetailsDialog and treats it as a function
+                    context.Call(new FaceTestemony(), this.MessageReceivedAsync);
+                    break;
+
+                case TextEmotionOption:
+                    //Calls the FrequentlyAskedQuestion and treats it as a function
+                    context.Call(new TextEmotion(), this.MessageReceivedAsync);
+                    break;
+            }
+        }
     }
 }

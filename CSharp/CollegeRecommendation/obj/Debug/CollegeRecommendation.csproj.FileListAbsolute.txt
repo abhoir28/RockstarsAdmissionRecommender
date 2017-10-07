@@ -84,48 +84,73 @@ G:\Hackathon\Day 1\CollegeRecommendation\CollegeRecommendation\bin\fr\Microsoft.
 G:\Hackathon\Day 1\CollegeRecommendation\CollegeRecommendation\bin\ja\Microsoft.Bot.Builder.resources.dll
 G:\Hackathon\Day 1\CollegeRecommendation\CollegeRecommendation\bin\ru\Microsoft.Bot.Builder.resources.dll
 G:\Hackathon\Day 1\CollegeRecommendation\CollegeRecommendation\bin\zh-hans\Microsoft.Bot.Builder.resources.dll
-G:\Comment\Recommender(1API),FAQ,TextEmo\CollegeRecommendation\CollegeRecommendation\bin\Bot Application.dll.config
-G:\Comment\Recommender(1API),FAQ,TextEmo\CollegeRecommendation\CollegeRecommendation\bin\Bot Application.dll
-G:\Comment\Recommender(1API),FAQ,TextEmo\CollegeRecommendation\CollegeRecommendation\bin\Bot Application.pdb
-G:\Comment\Recommender(1API),FAQ,TextEmo\CollegeRecommendation\CollegeRecommendation\bin\AdaptiveCards.dll
-G:\Comment\Recommender(1API),FAQ,TextEmo\CollegeRecommendation\CollegeRecommendation\bin\Autofac.dll
-G:\Comment\Recommender(1API),FAQ,TextEmo\CollegeRecommendation\CollegeRecommendation\bin\Chronic.dll
-G:\Comment\Recommender(1API),FAQ,TextEmo\CollegeRecommendation\CollegeRecommendation\bin\Flurl.dll
-G:\Comment\Recommender(1API),FAQ,TextEmo\CollegeRecommendation\CollegeRecommendation\bin\Flurl.Http.dll
-G:\Comment\Recommender(1API),FAQ,TextEmo\CollegeRecommendation\CollegeRecommendation\bin\Microsoft.Bot.Builder.Autofac.dll
-G:\Comment\Recommender(1API),FAQ,TextEmo\CollegeRecommendation\CollegeRecommendation\bin\Microsoft.Bot.Builder.dll
-G:\Comment\Recommender(1API),FAQ,TextEmo\CollegeRecommendation\CollegeRecommendation\bin\Microsoft.Bot.Connector.dll
-G:\Comment\Recommender(1API),FAQ,TextEmo\CollegeRecommendation\CollegeRecommendation\bin\Microsoft.IdentityModel.Protocol.Extensions.dll
-G:\Comment\Recommender(1API),FAQ,TextEmo\CollegeRecommendation\CollegeRecommendation\bin\Microsoft.Rest.ClientRuntime.dll
-G:\Comment\Recommender(1API),FAQ,TextEmo\CollegeRecommendation\CollegeRecommendation\bin\Microsoft.WindowsAzure.Configuration.dll
-G:\Comment\Recommender(1API),FAQ,TextEmo\CollegeRecommendation\CollegeRecommendation\bin\Newtonsoft.Json.dll
-G:\Comment\Recommender(1API),FAQ,TextEmo\CollegeRecommendation\CollegeRecommendation\bin\System.IdentityModel.Tokens.Jwt.dll
-G:\Comment\Recommender(1API),FAQ,TextEmo\CollegeRecommendation\CollegeRecommendation\bin\System.Net.Http.Formatting.dll
-G:\Comment\Recommender(1API),FAQ,TextEmo\CollegeRecommendation\CollegeRecommendation\bin\System.Web.Http.dll
-G:\Comment\Recommender(1API),FAQ,TextEmo\CollegeRecommendation\CollegeRecommendation\bin\System.Web.Http.WebHost.dll
-G:\Comment\Recommender(1API),FAQ,TextEmo\CollegeRecommendation\CollegeRecommendation\bin\Autofac.xml
-G:\Comment\Recommender(1API),FAQ,TextEmo\CollegeRecommendation\CollegeRecommendation\bin\Flurl.xml
-G:\Comment\Recommender(1API),FAQ,TextEmo\CollegeRecommendation\CollegeRecommendation\bin\Flurl.Http.xml
-G:\Comment\Recommender(1API),FAQ,TextEmo\CollegeRecommendation\CollegeRecommendation\bin\Microsoft.Bot.Builder.xml
-G:\Comment\Recommender(1API),FAQ,TextEmo\CollegeRecommendation\CollegeRecommendation\bin\Microsoft.Bot.Builder.Autofac.xml
-G:\Comment\Recommender(1API),FAQ,TextEmo\CollegeRecommendation\CollegeRecommendation\bin\Microsoft.Bot.Connector.xml
-G:\Comment\Recommender(1API),FAQ,TextEmo\CollegeRecommendation\CollegeRecommendation\bin\Microsoft.IdentityModel.Protocol.Extensions.xml
-G:\Comment\Recommender(1API),FAQ,TextEmo\CollegeRecommendation\CollegeRecommendation\bin\Microsoft.WindowsAzure.Configuration.xml
-G:\Comment\Recommender(1API),FAQ,TextEmo\CollegeRecommendation\CollegeRecommendation\bin\Newtonsoft.Json.xml
-G:\Comment\Recommender(1API),FAQ,TextEmo\CollegeRecommendation\CollegeRecommendation\bin\System.IdentityModel.Tokens.Jwt.xml
-G:\Comment\Recommender(1API),FAQ,TextEmo\CollegeRecommendation\CollegeRecommendation\bin\System.Net.Http.Formatting.xml
-G:\Comment\Recommender(1API),FAQ,TextEmo\CollegeRecommendation\CollegeRecommendation\bin\System.Web.Http.xml
-G:\Comment\Recommender(1API),FAQ,TextEmo\CollegeRecommendation\CollegeRecommendation\bin\System.Web.Http.WebHost.xml
-G:\Comment\Recommender(1API),FAQ,TextEmo\CollegeRecommendation\CollegeRecommendation\bin\ar\Microsoft.Bot.Builder.resources.dll
-G:\Comment\Recommender(1API),FAQ,TextEmo\CollegeRecommendation\CollegeRecommendation\bin\cs\Microsoft.Bot.Builder.resources.dll
-G:\Comment\Recommender(1API),FAQ,TextEmo\CollegeRecommendation\CollegeRecommendation\bin\de-dE\Microsoft.Bot.Builder.resources.dll
-G:\Comment\Recommender(1API),FAQ,TextEmo\CollegeRecommendation\CollegeRecommendation\bin\en\Microsoft.Bot.Builder.resources.dll
-G:\Comment\Recommender(1API),FAQ,TextEmo\CollegeRecommendation\CollegeRecommendation\bin\es\Microsoft.Bot.Builder.resources.dll
-G:\Comment\Recommender(1API),FAQ,TextEmo\CollegeRecommendation\CollegeRecommendation\bin\fa\Microsoft.Bot.Builder.resources.dll
-G:\Comment\Recommender(1API),FAQ,TextEmo\CollegeRecommendation\CollegeRecommendation\bin\fr\Microsoft.Bot.Builder.resources.dll
-G:\Comment\Recommender(1API),FAQ,TextEmo\CollegeRecommendation\CollegeRecommendation\bin\ja\Microsoft.Bot.Builder.resources.dll
-G:\Comment\Recommender(1API),FAQ,TextEmo\CollegeRecommendation\CollegeRecommendation\bin\ru\Microsoft.Bot.Builder.resources.dll
-G:\Comment\Recommender(1API),FAQ,TextEmo\CollegeRecommendation\CollegeRecommendation\bin\zh-hans\Microsoft.Bot.Builder.resources.dll
-G:\Comment\Recommender(1API),FAQ,TextEmo\CollegeRecommendation\CollegeRecommendation\obj\Debug\CollegeRecommendation.csprojResolveAssemblyReference.cache
-G:\Comment\Recommender(1API),FAQ,TextEmo\CollegeRecommendation\CollegeRecommendation\obj\Debug\Bot Application.dll
-G:\Comment\Recommender(1API),FAQ,TextEmo\CollegeRecommendation\CollegeRecommendation\obj\Debug\Bot Application.pdb
+F:\VisualStudioProjects\CollegeRecommendation\CollegeRecommendation\bin\Bot Application.dll.config
+F:\VisualStudioProjects\CollegeRecommendation\CollegeRecommendation\bin\Bot Application.dll
+F:\VisualStudioProjects\CollegeRecommendation\CollegeRecommendation\bin\Bot Application.pdb
+F:\VisualStudioProjects\CollegeRecommendation\CollegeRecommendation\bin\AdaptiveCards.dll
+F:\VisualStudioProjects\CollegeRecommendation\CollegeRecommendation\bin\Autofac.dll
+F:\VisualStudioProjects\CollegeRecommendation\CollegeRecommendation\bin\Chronic.dll
+F:\VisualStudioProjects\CollegeRecommendation\CollegeRecommendation\bin\Emgu.CV.UI.dll
+F:\VisualStudioProjects\CollegeRecommendation\CollegeRecommendation\bin\Emgu.CV.UI.GL.dll
+F:\VisualStudioProjects\CollegeRecommendation\CollegeRecommendation\bin\Emgu.CV.World.dll
+F:\VisualStudioProjects\CollegeRecommendation\CollegeRecommendation\bin\Flurl.dll
+F:\VisualStudioProjects\CollegeRecommendation\CollegeRecommendation\bin\Flurl.Http.dll
+F:\VisualStudioProjects\CollegeRecommendation\CollegeRecommendation\bin\Microsoft.Bot.Builder.Autofac.dll
+F:\VisualStudioProjects\CollegeRecommendation\CollegeRecommendation\bin\Microsoft.Bot.Builder.dll
+F:\VisualStudioProjects\CollegeRecommendation\CollegeRecommendation\bin\Microsoft.Bot.Connector.dll
+F:\VisualStudioProjects\CollegeRecommendation\CollegeRecommendation\bin\Microsoft.IdentityModel.Protocol.Extensions.dll
+F:\VisualStudioProjects\CollegeRecommendation\CollegeRecommendation\bin\Microsoft.Rest.ClientRuntime.dll
+F:\VisualStudioProjects\CollegeRecommendation\CollegeRecommendation\bin\Microsoft.WindowsAzure.Configuration.dll
+F:\VisualStudioProjects\CollegeRecommendation\CollegeRecommendation\bin\Newtonsoft.Json.dll
+F:\VisualStudioProjects\CollegeRecommendation\CollegeRecommendation\bin\OpenTK.dll
+F:\VisualStudioProjects\CollegeRecommendation\CollegeRecommendation\bin\OpenTK.GLControl.dll
+F:\VisualStudioProjects\CollegeRecommendation\CollegeRecommendation\bin\System.IdentityModel.Tokens.Jwt.dll
+F:\VisualStudioProjects\CollegeRecommendation\CollegeRecommendation\bin\System.Net.Http.Formatting.dll
+F:\VisualStudioProjects\CollegeRecommendation\CollegeRecommendation\bin\System.Web.Http.dll
+F:\VisualStudioProjects\CollegeRecommendation\CollegeRecommendation\bin\System.Web.Http.WebHost.dll
+F:\VisualStudioProjects\CollegeRecommendation\CollegeRecommendation\bin\ZedGraph.dll
+F:\VisualStudioProjects\CollegeRecommendation\CollegeRecommendation\bin\Autofac.xml
+F:\VisualStudioProjects\CollegeRecommendation\CollegeRecommendation\bin\Emgu.CV.UI.xml
+F:\VisualStudioProjects\CollegeRecommendation\CollegeRecommendation\bin\Emgu.CV.UI.GL.xml
+F:\VisualStudioProjects\CollegeRecommendation\CollegeRecommendation\bin\Emgu.CV.World.xml
+F:\VisualStudioProjects\CollegeRecommendation\CollegeRecommendation\bin\Flurl.xml
+F:\VisualStudioProjects\CollegeRecommendation\CollegeRecommendation\bin\Flurl.Http.xml
+F:\VisualStudioProjects\CollegeRecommendation\CollegeRecommendation\bin\Microsoft.Bot.Builder.xml
+F:\VisualStudioProjects\CollegeRecommendation\CollegeRecommendation\bin\Microsoft.Bot.Builder.Autofac.xml
+F:\VisualStudioProjects\CollegeRecommendation\CollegeRecommendation\bin\Microsoft.Bot.Connector.xml
+F:\VisualStudioProjects\CollegeRecommendation\CollegeRecommendation\bin\Microsoft.IdentityModel.Protocol.Extensions.xml
+F:\VisualStudioProjects\CollegeRecommendation\CollegeRecommendation\bin\Microsoft.WindowsAzure.Configuration.xml
+F:\VisualStudioProjects\CollegeRecommendation\CollegeRecommendation\bin\Newtonsoft.Json.xml
+F:\VisualStudioProjects\CollegeRecommendation\CollegeRecommendation\bin\OpenTK.xml
+F:\VisualStudioProjects\CollegeRecommendation\CollegeRecommendation\bin\OpenTK.GLControl.xml
+F:\VisualStudioProjects\CollegeRecommendation\CollegeRecommendation\bin\System.IdentityModel.Tokens.Jwt.xml
+F:\VisualStudioProjects\CollegeRecommendation\CollegeRecommendation\bin\System.Net.Http.Formatting.xml
+F:\VisualStudioProjects\CollegeRecommendation\CollegeRecommendation\bin\System.Web.Http.xml
+F:\VisualStudioProjects\CollegeRecommendation\CollegeRecommendation\bin\System.Web.Http.WebHost.xml
+F:\VisualStudioProjects\CollegeRecommendation\CollegeRecommendation\bin\ZedGraph.xml
+F:\VisualStudioProjects\CollegeRecommendation\CollegeRecommendation\bin\ar\Microsoft.Bot.Builder.resources.dll
+F:\VisualStudioProjects\CollegeRecommendation\CollegeRecommendation\bin\cs\Microsoft.Bot.Builder.resources.dll
+F:\VisualStudioProjects\CollegeRecommendation\CollegeRecommendation\bin\de-dE\Microsoft.Bot.Builder.resources.dll
+F:\VisualStudioProjects\CollegeRecommendation\CollegeRecommendation\bin\en\Microsoft.Bot.Builder.resources.dll
+F:\VisualStudioProjects\CollegeRecommendation\CollegeRecommendation\bin\es\Microsoft.Bot.Builder.resources.dll
+F:\VisualStudioProjects\CollegeRecommendation\CollegeRecommendation\bin\fa\Microsoft.Bot.Builder.resources.dll
+F:\VisualStudioProjects\CollegeRecommendation\CollegeRecommendation\bin\fr\Microsoft.Bot.Builder.resources.dll
+F:\VisualStudioProjects\CollegeRecommendation\CollegeRecommendation\bin\ja\Microsoft.Bot.Builder.resources.dll
+F:\VisualStudioProjects\CollegeRecommendation\CollegeRecommendation\bin\ru\Microsoft.Bot.Builder.resources.dll
+F:\VisualStudioProjects\CollegeRecommendation\CollegeRecommendation\bin\zh-hans\Microsoft.Bot.Builder.resources.dll
+F:\VisualStudioProjects\CollegeRecommendation\CollegeRecommendation\bin\de\ZedGraph.resources.dll
+F:\VisualStudioProjects\CollegeRecommendation\CollegeRecommendation\bin\es\ZedGraph.resources.dll
+F:\VisualStudioProjects\CollegeRecommendation\CollegeRecommendation\bin\fr\ZedGraph.resources.dll
+F:\VisualStudioProjects\CollegeRecommendation\CollegeRecommendation\bin\hu\ZedGraph.resources.dll
+F:\VisualStudioProjects\CollegeRecommendation\CollegeRecommendation\bin\it\ZedGraph.resources.dll
+F:\VisualStudioProjects\CollegeRecommendation\CollegeRecommendation\bin\ja\ZedGraph.resources.dll
+F:\VisualStudioProjects\CollegeRecommendation\CollegeRecommendation\bin\pt\ZedGraph.resources.dll
+F:\VisualStudioProjects\CollegeRecommendation\CollegeRecommendation\bin\ru\ZedGraph.resources.dll
+F:\VisualStudioProjects\CollegeRecommendation\CollegeRecommendation\bin\sk\ZedGraph.resources.dll
+F:\VisualStudioProjects\CollegeRecommendation\CollegeRecommendation\bin\sv\ZedGraph.resources.dll
+F:\VisualStudioProjects\CollegeRecommendation\CollegeRecommendation\bin\tr\ZedGraph.resources.dll
+F:\VisualStudioProjects\CollegeRecommendation\CollegeRecommendation\bin\zh-cn\ZedGraph.resources.dll
+F:\VisualStudioProjects\CollegeRecommendation\CollegeRecommendation\bin\zh-tw\ZedGraph.resources.dll
+F:\VisualStudioProjects\CollegeRecommendation\CollegeRecommendation\obj\Debug\CollegeRecommendation.csprojResolveAssemblyReference.cache
+F:\VisualStudioProjects\CollegeRecommendation\CollegeRecommendation\obj\Debug\Bot Application.dll
+F:\VisualStudioProjects\CollegeRecommendation\CollegeRecommendation\obj\Debug\Bot Application.pdb

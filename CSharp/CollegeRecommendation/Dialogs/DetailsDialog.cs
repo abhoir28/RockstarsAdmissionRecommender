@@ -307,6 +307,8 @@ namespace CollegeRecommendation.Dialogs
 
             // await context.PostAsync(msg);
             await context.PostAsync(reply);
+            await context.PostAsync("Did you get your Desired College");
+            context.Wait(DesiredCollege);
         }
 
         private static List<college> apiCall(string subCategory, string department, string marks,string category)
@@ -448,6 +450,378 @@ namespace CollegeRecommendation.Dialogs
 
             return heroCard.ToAttachment();
         }
+        private async Task DesiredCollege(IDialogContext context, IAwaitable<object> result)
+        {
+            var activity = await result as Activity;
+            var res = activity.Text;
+            int Mrk = Convert.ToInt32(marks);
+            if (res.Contains("no") || res.Contains("none") || res.Contains("No") || res.Contains("None"))
+            {
+                if (Mrk > 150)
+                {
+                    this.MhcetLessThanOnetwentySelected(context);
+                }
+                else if (Mrk > 120)
+                {
+                    this.MhcetLessThanEightySelected(context);
+                }
+                else
+                {
+                    this.MhcetLessThanFourtySelected(context);
+                }
+            }
+            else
+            {
+                context.Done<object>(null);
+            }
+        }
+
+        private const string Watumall = "Watumall";
+        private const string Rizvi = "Rizvi";
+        private const string Vidyavardani = "Vidyavardhini's College of Engineering and Technology";
+        private const string Viva = "VIVA Institute of Technology";
+        private const string Universal = "Universal College of Engineering Mumbai";
+        private void MhcetLessThanFourtySelected(IDialogContext context)
+        {
+            PromptDialog.Choice(context, this.OnMhcetLessThanFourtySelected, new List<string>() { Watumall, Rizvi, Vidyavardani, Viva, Universal }, "Select any one", "Not a valid option", 3);
+        }
+        string CollegeName;
+        private async Task OnMhcetLessThanFourtySelected(IDialogContext context, IAwaitable<string> result)
+        {
+            string optionSelected = await result;
+
+            switch (optionSelected)
+            {
+                case Watumall:
+                    CollegeName = "Watumull Institute of Electronics Engineering and Computer Technology";
+                    break;
+
+                case Rizvi:
+                    CollegeName = "Rizvi Education Society's Rizvi College of Engineering (RCOE)";
+                    break;
+
+                case Vidyavardani:
+                    CollegeName = "Vidyavardhini's College of Engineering and Technology";
+                    break;
+
+                case Viva:
+                    CollegeName = "VIVA Institute of Technology";
+                    break;
+
+                case Universal:
+                    CollegeName = "Universal College of Engineering Mumbai";
+                    break;
+
+            }
+
+            await context.PostAsync("These are the colleges in which you can get in Irrespective of Stream.");
+            List<college> listColleges = SecondApiCall(sub, marks, Category, CollegeName);
+
+            var reply = context.MakeMessage();
+
+            //reply.AttachmentLayout = AttachmentLayoutTypes.Carousel;
+            reply.Attachments = GetApiCardsCollegeAttachments(listColleges);
+
+            // await context.PostAsync(msg);
+            await context.PostAsync(reply);
+            context.Done<object>(null);
+        }
+        private const string Xaviers = "Xaviers";
+        private const string Thadomal = "Thadomal";
+        private const string Tiwari = "Tiwari";
+        private const string John = "John";
+        private const string Theems = "Theem College of Engineering";
+        private const string Rjit = "Manjara Charitable Trust's Rajiv Gandhi Institude of Technology (RGIT)";
+        private const string Bhavans = "Bhartiya Vidya Bhavans, Sardar Patel College of Engineering (SPCE)";
+        private const string Atharva = "Atharva College of Engineering ( ACE )";
+        private const string Thakur = "Thakur College of Engineering and Technology (TCET)";
+        private const string Francis = "St. Francis Institute of Technology ( Popularly known as SFIT )";
+        private void MhcetLessThanEightySelected(IDialogContext context)
+        {
+            PromptDialog.Choice(context, this.OnMhcetLessThanEightySelected, new List<string>() { Watumall, Rizvi, Vidyavardani, Viva, Universal, Xaviers, Thadomal, Tiwari, John, Theems, Rjit, Bhavans, Atharva, Thakur, Francis }, "Select any one", "Not a valid option", 3);
+        }
+        private async Task OnMhcetLessThanEightySelected(IDialogContext context, IAwaitable<string> result)
+        {
+            string optionSelected = await result;
+
+            switch (optionSelected)
+            {
+                case Watumall:
+                    CollegeName = "Watumull Institute of Electronics Engineering and Computer Technology";
+                    break;
+
+                case Rizvi:
+                    CollegeName = "Rizvi Education Society's Rizvi College of Engineering (RCOE)";
+                    break;
+
+                case Vidyavardani:
+                    CollegeName = "Vidyavardhini's College of Engineering and Technology";
+                    break;
+
+                case Viva:
+                    CollegeName = "VIVA Institute of Technology";
+                    break;
+
+                case Universal:
+                    CollegeName = "Universal College of Engineering Mumbai";
+                    break;
+
+                case Xaviers:
+                    CollegeName = "Xavier Institute of Engineering (XIE)";
+                    break;
+
+                case Thadomal:
+                    CollegeName = "Thadomal Shahani Engineering College (TSEC)";
+                    break;
+
+                case Tiwari:
+                    CollegeName = "Shree L R Tiwari College of Engineering";
+                    break;
+
+                case John:
+                    CollegeName = "St. John College of Engineering and Technology";
+                    break;
+
+                case Theems:
+                    CollegeName = "Theem College of Engineering";
+                    break;
+
+                case Rjit:
+                    CollegeName = "Manjara Charitable Trust's Rajiv Gandhi Institude of Technology (RGIT)";
+                    break;
+
+                case Bhavans:
+                    CollegeName = "Bhartiya Vidya Bhavans, Sardar Patel College of Engineering (SPCE)";
+                    break;
+
+                case Atharva:
+                    CollegeName = "Atharva College of Engineering ( ACE )";
+                    break;
+
+                case Thakur:
+                    CollegeName = "Thakur College of Engineering and Technology (TCET)";
+                    break;
+
+                case Francis:
+                    CollegeName = "St. Francis Institute of Technology ( Popularly known as SFIT )";
+                    break;
+            }
+
+            await context.PostAsync("These are the colleges in which you can get in Irrespective of Stream.");
+            List<college> listColleges = SecondApiCall(sub, marks, Category, CollegeName);
+
+            var reply = context.MakeMessage();
+
+            //reply.AttachmentLayout = AttachmentLayoutTypes.Carousel;
+            reply.Attachments = GetApiCardsCollegeAttachments(listColleges);
+
+            // await context.PostAsync(msg);
+            await context.PostAsync(reply);
+            context.Done<object>(null);
+        }
+        private const string Somaiya = "K.J.Somaiya College of Engineering";
+        private const string Sangvi = "Shri Vile Parle Kelavani Mandal's Dwarkadas J. Sanghvi College of Engineering (Popularly known as DJ Sanghvi)";
+        private const string Concei = "Fr. Conceicao Rodrigues College Of Engineering";
+
+        private void MhcetLessThanOnetwentySelected(IDialogContext context)
+        {
+            PromptDialog.Choice(context, this.OnMhcetLessThanOnetwentySelected, new List<string>() { Watumall, Rizvi, Vidyavardani, Viva, Universal, Xaviers, Thadomal, Tiwari, John, Theems, Rjit, Bhavans, Atharva, Thakur, Francis }, "Select any one", "Not a valid option", 3);
+        }
+        private async Task OnMhcetLessThanOnetwentySelected(IDialogContext context, IAwaitable<string> result)
+        {
+            string optionSelected = await result;
+
+            switch (optionSelected)
+            {
+                case Watumall:
+                    CollegeName = "Watumull Institute of Electronics Engineering and Computer Technology";
+                    break;
+
+                case Rizvi:
+                    CollegeName = "Rizvi Education Society's Rizvi College of Engineering (RCOE)";
+                    break;
+
+                case Vidyavardani:
+                    CollegeName = "Vidyavardhini's College of Engineering and Technology";
+                    break;
+
+                case Viva:
+                    CollegeName = "VIVA Institute of Technology";
+                    break;
+
+                case Universal:
+                    CollegeName = "Universal College of Engineering Mumbai";
+                    break;
+
+                case Xaviers:
+                    CollegeName = "Xavier Institute of Engineering (XIE)";
+                    break;
+
+                case Thadomal:
+                    CollegeName = "Thadomal Shahani Engineering College (TSEC)";
+                    break;
+
+                case Tiwari:
+                    CollegeName = "Shree L R Tiwari College of Engineering";
+                    break;
+
+                case John:
+                    CollegeName = "St. John College of Engineering and Technology";
+                    break;
+
+                case Theems:
+                    CollegeName = "Theem College of Engineering";
+                    break;
+
+                case Rjit:
+                    CollegeName = "Manjara Charitable Trust's Rajiv Gandhi Institude of Technology (RGIT)";
+                    break;
+
+                case Bhavans:
+                    CollegeName = "Bhartiya Vidya Bhavans, Sardar Patel College of Engineering (SPCE)";
+                    break;
+
+                case Atharva:
+                    CollegeName = "Atharva College of Engineering ( ACE )";
+                    break;
+
+                case Thakur:
+                    CollegeName = "Thakur College of Engineering and Technology (TCET)";
+                    break;
+
+                case Francis:
+                    CollegeName = "St. Francis Institute of Technology ( Popularly known as SFIT )";
+                    break;
+
+                case Somaiya:
+                    CollegeName = "K.J.Somaiya College of Engineering";
+                    break;
+
+                case Sangvi:
+                    CollegeName = "Shri Vile Parle Kelavani Mandal's Dwarkadas J. Sanghvi College of Engineering (Popularly known as DJ Sanghvi)";
+                    break;
+
+                case Concei:
+                    CollegeName = "Fr. Conceicao Rodrigues College Of Engineering";
+                    break;
+            }
+
+            await context.PostAsync("These are the colleges in which you can get in Irrespective of Stream.");
+            List<college> listColleges = SecondApiCall(sub, marks, Category, CollegeName);
+
+            var reply = context.MakeMessage();
+
+            //reply.AttachmentLayout = AttachmentLayoutTypes.Carousel;
+            reply.Attachments = GetApiCardsCollegeAttachments(listColleges);
+
+            await context.PostAsync(reply);
+            context.Done<object>(null);
+        }
+
+        private static List<college> SecondApiCall(string subCategory, string marks, string category, string college)
+        {
+            string myCategory = category;
+            string mySubCategory = subCategory;
+
+
+            WebClient webClient = new WebClient();
+
+
+            Dictionary<string, string> values = new Dictionary<string, string>();
+            values.Add("minCet", marks);
+            values.Add("category", myCategory);
+            values.Add("subCategory", mySubCategory);
+            values.Add("collegeName", college);
+
+            DataContractJsonSerializer serializer = new DataContractJsonSerializer(typeof(Dictionary<string, string>));
+            string JsonString = (new JavaScriptSerializer()).Serialize(values);
+
+
+            //string serializedObject = JsonConvert.SerializeObject(myQueryStringCollection);
+            //string result = webClient.DownloadString("https://g0zmgbj2z2.execute-api.ap-southeast-1.amazonaws.com/prod12");
+            //string result = webClient.UploadString("https://g0zmgbj2z2.execute-api.ap-southeast-1.amazonaws.com/prod12", "POST", JsonString);
+            //dynamic parsedArray = JsonConvert.DeserializeObject(result);
+
+            string result2 = webClient.UploadString("https://goocg51m9i.execute-api.ap-southeast-1.amazonaws.com/dev/", "POST", JsonString);
+
+
+            dynamic parsedArrayTwo = JsonConvert.DeserializeObject(result2);
+
+            //dynamic parsedArray2 = JsonConvert.DeserializeObject(parsedArray);
+
+            college cg;
+            List<college> clg = new List<college>();
+            int i = 0;
+
+            foreach (dynamic item in parsedArrayTwo)
+            {
+                cg = new college();
+                cg.collegeName = item.collegeName;
+                cg.Description = item.description;
+                cg.imgUrl = item.imgUrl;
+                cg.department = item.department;
+                cg.fees = item.fees;
+                cg.address = item.address;
+                cg.webName = item.webName;
+                clg.Add(cg);
+
+            }
+
+            return clg;
+
+        }
+        private IList<Attachment> GetApiCardsCollegeAttachments(List<college> listColleges)
+        {
+            List<Attachment> attachment = new List<Attachment>();
+            int i = 0;
+            foreach (college c in listColleges)
+            {
+                if (i == 0)
+                {
+                    var resAttach = GetHeroCollegeCard(
+                    c.collegeName,
+                    c.address,
+                    c.Description,
+                    new CardImage(url: c.imgUrl),
+                    new CardAction(ActionTypes.OpenUrl, c.department, value: c.webName));
+                    attachment.Add(resAttach);
+                    i = i + 1;
+
+                }
+                else
+                {
+                    var resAttach = GetHeroColCard(
+
+                    new CardAction(ActionTypes.OpenUrl, c.department, value: c.webName));
+                    attachment.Add(resAttach);
+                }
+            }
+            return attachment;
+        }
+
+        private static Attachment GetHeroCollegeCard(string title, string subtitle, string text, CardImage cardImage, CardAction cardAction)
+        {
+            var heroCard = new HeroCard
+            {
+                Title = title,
+                Subtitle = subtitle,
+                Text = text,
+                Images = new List<CardImage>() { cardImage },
+                Buttons = new List<CardAction>() { cardAction },
+            };
+
+            return heroCard.ToAttachment();
+        }
+        private static Attachment GetHeroColCard(CardAction cardAction)
+        {
+            var heroCard = new HeroCard
+            {
+                Buttons = new List<CardAction>() { cardAction },
+            };
+
+            return heroCard.ToAttachment();
+        }
+
     }
 
 }

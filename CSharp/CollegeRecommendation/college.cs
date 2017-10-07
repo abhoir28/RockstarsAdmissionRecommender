@@ -13,5 +13,8 @@ namespace CallingApi
         public string imgUrl { get; set; }
         public string webName { get; set; }
         public string collegeName { get; set; }
+        public string department { get; set; }
+        public string fees { get; set; }
+
     }
 }
